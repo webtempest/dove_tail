@@ -1,0 +1,24 @@
+/* DIMENSIONS 
+width: 950
+padding: 15 right 40 left = 55
+combined width: 895
+
+
+*/
+
+
+/* IDS */
+
+#content {float:left;width:895px;margin-right:0;background-color:#d9cb9e}
+#footer, #header {float:left;margin-right:10px;width:950px;margin-right:0;}
+div#navigation {}
+
+
+/* CLASSES */
+body.public{background-color:#374140}
+div.section, div.entry, .feeds {float:left;margin-right:10px;width:230px;}
+#content.padding {padding: 2em 15px 0px 40px}
+
+/* PICS */
+#header{background: #d9cb9e url('images/header.jpg') repeat-x; height:149px;}
+#footer
