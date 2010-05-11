@@ -6,16 +6,30 @@
       = @title ||= "Dove Tail Timbers"
     
     = stylesheet_link_tag 'print.css', :media => 'print'
-    = stylesheet_link_tag 'screen.css', :media => 'screen, projection'
-    = stylesheet_link_tag 'application.css', :media => 'screen, projection'
+    = stylesheet_link_tag 'screen.css', 'application.css', 'nav.css', :media => 'screen, projection'
     /[if lt IE 8]
       = stylesheet_link_tag 'ie.css', :media => 'screen, projection'
       
-    = javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"
-
-  %body.public
+    = javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js", 'hoverIntent.js', 'superfish.js'
+    = javascript_tag do
+      jQuery(function(){$('ul.nav').superfish();});
+     
+  %body.index
     .container
       #header
-        %h1 
+        %h1 Dove Tail Timbers
+      #nav
+        = yield :nav
+      #feature
+        = yield :feature
       #content.padding
         = yield
+        .featureitem.prepend-1.span-6
+          .padding-top
+            %p Left
+        .featureitem.prepend-1.span-6
+          .padding-top
+            %p Middle
+        .featureitem.prepend-1.span-6.last
+          .padding-top
+            %p Right
