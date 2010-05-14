@@ -23,10 +23,13 @@ sand: #d9cb9e
 #slider{height:220px;}
 #nav{background: #374140; height: 31px;}
 #content{background: #d9cb9e url('images/maintop.jpg') repeat-x;float:left; width:895px;margin-right:0;}
+h1 {font-size:2em;}
+hr {background-color: #c5b37a}
 
-/* FIXTURES */
+/* footer */
 #footer, #header, #nav, #feature {float:left;margin-right:10px;width:950px;margin-right:0;}
-
+#footer{background: #d9cb9e url('images/maintop.jpg') repeat-x; height: 76px;}
+#footer p {padding: 40px 0 0 40px; }
 
 /* feature items */
 .featureitem {width: 240px; background: url('images/featureitem.jpg') no-repeat right top; height: 267px; float:left;padding-left: 40px;}
@@ -35,11 +38,10 @@ sand: #d9cb9e
 .featureitem .caption h3{background:none repeat scroll 0 0 black; color:white; left:-5px; margin-bottom:0.2em; opacity:0.7; padding-left:7px;position:relative;}
 .featureitem .caption p {padding-right:0.8em;}
 
-
 /* CLASSES */
 body{background-color:#374140}
 div.section, div.entry, .feeds {float:left;margin-right:10px;width:230px;}
 #content.padding {padding: 2em 15px 0px 40px}
 .padding-top{padding-top: 20px;}
-
+.v40{height: 40px; float:left; background-color: transparent; display: block; width: 100%}
 

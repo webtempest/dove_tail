@@ -3,7 +3,34 @@
 
 - content_for :feature do
   = render :partial => "feature"
-
-%h1 About Us
-%p Dove Tail Timber cabins are all about the European lifestyle: think wine and warm company, a blazing fire and the sensual smell of varnished wood. Buy a cabin from Dove Tail Timbers, and you will be living the dream.
-
+/*-----------------CONTENT --------------------- */
+#hometext
+  %h1 Who are we?
+  %p Dove Tail Timbers is a Tasmanian business devoted to using Tasmanian timber to it's highest potential. We incorporate European building techniques and style to create inspired and beautiful homes and other timber products.  
+#contacttext
+  %h1 Contact us:
+  %p Bodie Cavanagh, 
+  %p Email: bodie.cavanagh@gmail.com 
+  %p Telephone: 0429132929
+%hr
+.featureitem
+  = image_tag 'bodie-wood.jpg'
+  .caption
+    %h3 Bodie with some wood
+    %p This is a photo of Bodie with some wood. The wood is the type that comes from trees.
+.featureitem
+  = image_tag 'garden1.jpg'
+  .caption
+    %h3 Garden Cutout
+    %p Gardens can be put inside this garden cutout. 
+.featureitem.last
+  = image_tag 'cabin.jpg'
+  .caption
+    %h3 Cabin Construction
+    %p The cabin midway through construction.
+%hr
+.v80
+  %br
+/*-----------------END CONTENT --------------------- */
+- content_for :footer do
+  %p Copyright Dove Tail Timbers 2010

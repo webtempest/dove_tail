@@ -10,7 +10,7 @@
     /[if lt IE 8]
       = stylesheet_link_tag 'ie.css', :media => 'screen, projection'
       
-    = javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js", 'hoverIntent.js', 'superfish.js'
+    = javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js", 'hoverIntent.js', 'superfish.js', 'application.js'
     = javascript_tag do
       :plain
         jQuery(function(){
@@ -27,18 +27,10 @@
         = yield :feature
       #content.padding
         = yield
-        .featureitem
-          = image_tag 'bodie-wood.jpg'
-          .caption
-            %h3 Bodie with some wood
-            %p This is a photo of Bodie with some wood. The wood is the type that comes from trees.
-        .featureitem
-          = image_tag 'garden1.jpg'
-          .caption
-            %h3 Garden Cutout
-            %p Gardens can be put inside this garden cutout. 
-        .featureitem.last
-          %p Right
+      #footer
+        = yield :footer
+        
+        
           
           
           
