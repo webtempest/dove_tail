@@ -15,18 +15,25 @@ sand: #d9cb9e
 
 
 /* EDITABLES */
+
+.container{background-color: #d9cb9e;}
 #header{background: #d9cb9e url('images/header.jpg') repeat-x; height:100px;}
 #header h1{text-indent: -9999px; background-image: url('images/logo2.jpg'); height: 80px; width: 369px;}
 #feature{background: #d9cb9e url('images/feature.jpg') repeat-x; height:220px;}
+#slider{height:220px;}
 #nav{background: #374140; height: 31px;}
-#content{background: #d9cb9e url('images/maintop.jpg') repeat-x;}
-
+#content{background: #d9cb9e url('images/maintop.jpg') repeat-x;float:left; width:895px;margin-right:0;}
 
 /* FIXTURES */
-
-#content {float:left;width:895px;margin-right:0;background-color:#d9cb9e}
 #footer, #header, #nav, #feature {float:left;margin-right:10px;width:950px;margin-right:0;}
-.featureitem {background: url('images/featureitem.jpg') no-repeat right top; height: 267px; }
+
+
+/* feature items */
+.featureitem {width: 240px; background: url('images/featureitem.jpg') no-repeat right top; height: 267px; float:left;padding-left: 40px;}
+.featureitem img {position: relative; top: 8px; left: -7px;}
+.featureitem .caption{position: relative; top: -15px; left: -2px;}
+.featureitem .caption h3{background:none repeat scroll 0 0 black; color:white; left:-5px; margin-bottom:0.2em; opacity:0.7; padding-left:7px;position:relative;}
+.featureitem .caption p {padding-right:0.8em;}
 
 
 /* CLASSES */

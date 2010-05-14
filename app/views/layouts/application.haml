@@ -12,7 +12,10 @@
       
     = javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js", 'hoverIntent.js', 'superfish.js'
     = javascript_tag do
-      jQuery(function(){$('ul.nav').superfish();});
+      :plain
+        jQuery(function(){
+          $('ul.nav').superfish();
+        });
      
   %body.index
     .container
@@ -24,12 +27,25 @@
         = yield :feature
       #content.padding
         = yield
-        .featureitem.prepend-1.span-6
-          .padding-top
-            %p Left
-        .featureitem.prepend-1.span-6
-          .padding-top
-            %p Middle
-        .featureitem.prepend-1.span-6.last
-          .padding-top
-            %p Right
+        .featureitem
+          = image_tag 'bodie-wood.jpg'
+          .caption
+            %h3 Bodie with some wood
+            %p This is a photo of Bodie with some wood. The wood is the type that comes from trees.
+        .featureitem
+          = image_tag 'garden1.jpg'
+          .caption
+            %h3 Garden Cutout
+            %p Gardens can be put inside this garden cutout. 
+        .featureitem.last
+          %p Right
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          

@@ -27,6 +27,20 @@
 	outline:		0;
 }
 
+/*** current background ***/
+.nav li.current  { background-color: #d9cb9e;}
+/*** current color and border ***/
+.nav li.current > a { 
+  color: #374140; 
+  border-left:	1px solid #d0c296;
+  border-top:		1px solid #d0c296; 
+}
+/*** current hover ***/
+.nav li.current:hover, .nav li.current.sfHover,.nav li.current > a:focus, .nav li.current > a:hover, .nav li.current > a:active {
+	background-color: #ccbd8e;
+	outline:		0;
+}
+
 /*** ESSENTIAL STYLES ***/
 .nav, .nav * {
 	margin:			0;
