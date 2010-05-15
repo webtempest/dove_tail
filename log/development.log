@@ -6023,3 +6023,67 @@ Rendering public/index
 Rendered public/_nav (0.3ms)
 Rendered public/_feature (0.3ms)
 Completed in 57ms (View: 56, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-05-15 12:01:54) [GET]
+Rendering template within layouts/application
+Rendering public/index
+Rendered public/_nav (0.3ms)
+Rendered public/_feature (0.4ms)
+Completed in 52ms (View: 51, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-05-15 12:01:59) [GET]
+Rendering template within layouts/application
+Rendering public/index
+Rendered public/_nav (0.3ms)
+Rendered public/_feature (0.3ms)
+Completed in 16ms (View: 15, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-05-15 17:24:31) [GET]
+Rendering template within layouts/application
+Rendering public/index
+Rendered public/_nav (0.3ms)
+Rendered public/_feature (0.3ms)
+Completed in 55ms (View: 54, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-05-15 17:25:28) [GET]
+Rendering template within layouts/application
+Rendering public/index
+Rendered public/_nav (0.4ms)
+Rendered public/_feature (0.3ms)
+Completed in 17ms (View: 16, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-05-15 17:25:48) [GET]
+Rendering template within layouts/application
+Rendering public/index
+Rendered public/_nav (0.4ms)
+Rendered public/_feature (0.3ms)
+Completed in 15ms (View: 14, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-05-15 17:26:02) [GET]
+Rendering template within layouts/application
+Rendering public/index
+Rendered public/_nav (0.4ms)
+Rendered public/_feature (0.3ms)
+Completed in 15ms (View: 14, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-05-15 17:26:05) [GET]
+Rendering template within layouts/application
+Rendering public/index
+Rendered public/_nav (0.3ms)
+Rendered public/_feature (0.3ms)
+Completed in 17ms (View: 15, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-05-15 17:26:42) [GET]
+Rendering template within layouts/application
+Rendering public/index
+Rendered public/_nav (0.3ms)
+Rendered public/_feature (0.4ms)
+Completed in 16ms (View: 15, DB: 0) | 200 OK [http://127.0.0.1/]
