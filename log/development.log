@@ -6087,3 +6087,11 @@ Rendering public/index
 Rendered public/_nav (0.3ms)
 Rendered public/_feature (0.4ms)
 Completed in 16ms (View: 15, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-05-16 08:51:33) [GET]
+Rendering template within layouts/application
+Rendering public/index
+Rendered public/_nav (0.3ms)
+Rendered public/_feature (0.3ms)
+Completed in 12ms (View: 11, DB: 0) | 200 OK [http://127.0.0.1/]
