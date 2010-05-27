@@ -44,7 +44,7 @@ function featureSlider(){
       $(this).css('z-index', '1');
     }
     else {
-      $(this).css('z-index', '-1');
+      $(this).hide();
     }
   });
   

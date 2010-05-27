@@ -7154,3 +7154,21 @@ Rendered public/_nav (1.1ms)
 Rendered public/_feature (1.4ms)
 Rendered layouts/_analytics (0.2ms)
 Completed in 38ms (View: 32, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-05-28 09:37:16) [GET]
+Rendering template within layouts/application
+Rendering public/index
+Rendered public/_nav (0.6ms)
+Rendered public/_feature (0.5ms)
+Rendered layouts/_analytics (0.1ms)
+Completed in 18ms (View: 16, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-05-28 09:37:57) [GET]
+Rendering template within layouts/application
+Rendering public/index
+Rendered public/_nav (0.3ms)
+Rendered public/_feature (0.5ms)
+Rendered layouts/_analytics (0.1ms)
+Completed in 14ms (View: 13, DB: 0) | 200 OK [http://127.0.0.1/]
