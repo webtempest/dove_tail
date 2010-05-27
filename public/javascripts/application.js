@@ -1,9 +1,15 @@
 // Place your application-specific JavaScript functions and classes here
 // This file is automatically included by javascript_include_tag :defaults
 $(document).ready(function(){ 
-  jQuery(function(){
-          $('ul.nav').superfish();
-        });
+  slideMenu();
+  featureSlider();
+});
+
+// MENU SYSTEM (PRETTY LONGWINDED)
+function slideMenu(){
+
+  $('ul.nav').superfish();
+        
   var contact = $('#contact');
   var home = $('#home');
   var hometext = $('#hometext');
@@ -14,25 +20,35 @@ $(document).ready(function(){
   contact.click(function(){
     home.parent().removeClass('current');
     contact.parent().addClass('current');
-    hometext.hide();
-    contacttext.show();
+    hometext.slideUp(300)
+    contacttext.delay(310).slideDown(300)
   });
   
   home.click(function(){
     contact.parent().removeClass('current');
     home.parent().addClass('current');
-    hometext.show();
-    contacttext.hide();
+    contacttext.slideUp(300)
+    hometext.delay(310).slideDown(300)
+  });
+};
+
+// FEATURE SLIDER
+function featureSlider(){
+
+  var images = $('.slide');
+  var amount = images.length;
+  console.log(amount);
+  //setInterval("next()", 5000);
+  images.each(function(){
+    if($(this).hasClass('current')){
+      $(this).css('z-index', '1');
+    }
+    else {
+      $(this).css('z-index', '-1');
+    }
   });
   
-  /* ANALYTICS */
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-16411086-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-});
+};
+function next(){
+    alert("yo");
+  };

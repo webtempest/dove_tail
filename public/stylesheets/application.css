@@ -8,6 +8,12 @@ width: 950
 padding: 15 right 40 left = 55
 combined width: 895
 
+featurebanner:
+950x220
+
+featureimg:
+240x185
+
 COLORS
 moss: #374140
 sand: #d9cb9e
@@ -44,4 +50,8 @@ div.section, div.entry, .feeds {float:left;margin-right:10px;width:230px;}
 #content.padding {padding: 2em 15px 0px 40px}
 .padding-top{padding-top: 20px;}
 .v40{height: 40px; float:left; background-color: transparent; display: block; width: 100%}
+
+/*SLIDER*/
+.slide{float:left; position:relative;}
+.stop{position:absolute; left: 1px}
 
