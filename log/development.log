@@ -7604,3 +7604,180 @@ Rendered public/_nav (0.5ms)
 Rendered public/_feature (0.4ms)
 Rendered layouts/_analytics (0.1ms)
 Completed in 15ms (View: 14, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-29 12:23:31) [GET]
+
+
+ActionController::RoutingError (No route matches "/null" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing/route_set.rb:390:in `recognize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p249/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p249/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p249/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p249/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p249/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p249/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p249/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p249/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p249/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p249/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p249/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p249/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p249/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p249/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p249/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p249/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p249/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p249/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p249/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /home/mplatts/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /home/mplatts/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:49
+    /home/mplatts/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /home/mplatts/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /home/mplatts/Documents/websites/dove_tail/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-29 12:23:36) [GET]
+
+
+ActionController::RoutingError (No route matches "/null" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing/route_set.rb:390:in `recognize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p249/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p249/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p249/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p249/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p249/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p249/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p249/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p249/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p249/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p249/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p249/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p249/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p249/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p249/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p249/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p249/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p249/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p249/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p249/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /home/mplatts/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /home/mplatts/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:49
+    /home/mplatts/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /home/mplatts/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /home/mplatts/Documents/websites/dove_tail/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-05-29 16:58:22) [GET]
+Rendering template within layouts/application
+Rendering public/index
+Rendered public/_nav (1.1ms)
+Rendered public/_feature (1.0ms)
+Rendered layouts/_analytics (0.2ms)
+Completed in 37ms (View: 32, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-29 16:58:30) [GET]
+
+
+ActionController::RoutingError (No route matches "/null" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing/route_set.rb:390:in `recognize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p249/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p249/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p249/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p249/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p249/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p249/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p249/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p249/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p249/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p249/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p249/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p249/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p249/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p249/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p249/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p249/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p249/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p249/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p249/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /home/mplatts/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /home/mplatts/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:49
+    /home/mplatts/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /home/mplatts/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /home/mplatts/Documents/websites/dove_tail/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-05-29 16:58:48) [GET]
+Rendering template within layouts/application
+Rendering public/index
+Rendered public/_nav (0.8ms)
+Rendered public/_feature (0.6ms)
+Rendered layouts/_analytics (0.2ms)
+Completed in 25ms (View: 23, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-05-29 16:59:21) [GET]
+Rendering template within layouts/application
+Rendering public/index
+Rendered public/_nav (0.4ms)
+Rendered public/_feature (0.3ms)
+Rendered layouts/_analytics (0.1ms)
+Completed in 143ms (View: 141, DB: 0) | 200 OK [http://127.0.0.1/]
