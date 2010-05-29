@@ -55,3 +55,18 @@ div.section, div.entry, .feeds {float:left;margin-right:10px;width:230px;}
 .slide{float:left; position:relative;}
 .stop{position:absolute; left: 1px}
 
+/* title */
+.ft-title{padding: 0 10px 0 10px; color: #d9cb9e;}
+
+/* next and prev */
+.ft-next, .ft-prev{text-decoration: none; background-color: black; opacity: 0.4; color: #d9cb9e; padding: 0 10px 0 10px;}
+.ft-prev{-moz-border-radius-topright:2ex;-webkit-border-top-right-radius:2ex;-moz-border-radius-bottomright:2ex;-webkit-border-bottom-right-radius:2ex;}
+.ft-next{-moz-border-radius-topleft:2ex;-webkit-border-top-left-radius:2ex;-moz-border-radius-bottomleft:2ex;-webkit-border-bottom-left-radius:2ex;}
+
+.ft-next:hover, .ft-prev:hover{color: #333;}
+
+	
+	
+
+	
+

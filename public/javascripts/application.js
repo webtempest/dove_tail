@@ -34,21 +34,19 @@ function slideMenu(){
 
 // FEATURE SLIDER
 function featureSlider(){
+  $('#slideshowHolder').jqFancyTransitions({ 'effect' : 'wave', 'width': 950, 'height': 220, 'navigation' : true, 'links' : true }); 
+}
 
-  var images = $('.slide');
-  var amount = images.length;
-  console.log(amount);
-  //setInterval("next()", 5000);
-  images.each(function(){
-    if($(this).hasClass('current')){
-      $(this).css('z-index', '1');
-    }
-    else {
-      $(this).hide();
-    }
-  });
+
   
-};
-function next(){
-    alert("yo");
-  };
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
