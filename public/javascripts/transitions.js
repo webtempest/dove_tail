@@ -187,10 +187,10 @@
 		if(opts[el.id].position == 'curtain'){
 			currWidth = $('#ft-'+el.id+itemId).width();
 			$('#ft-'+el.id+itemId).css({ width: 0, opacity: 0, 'background-image': 'url('+img[el.id][imgInc[el.id]]+')' });
-			$('#ft-'+el.id+itemId).animate({ width: currWidth, opacity: 1 }, 1000);
+			$('#ft-'+el.id+itemId).animate({ width: currWidth, opacity: 1 }, 2000);
 		} else {
 			$('#ft-'+el.id+itemId).css({ height: 0, opacity: 0, 'background-image': 'url('+img[el.id][imgInc[el.id]]+')' });
-			$('#ft-'+el.id+itemId).animate({ height: opts[el.id].height, opacity: 1 }, 1000);
+			$('#ft-'+el.id+itemId).animate({ height: opts[el.id].height, opacity: 1 }, 2000);
 		}
 		
 		inc[el.id]++;
