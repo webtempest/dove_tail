@@ -187,10 +187,10 @@
 		if(opts[el.id].position == 'curtain'){
 			currWidth = $('#ft-'+el.id+itemId).width();
 			$('#ft-'+el.id+itemId).css({ width: 0, opacity: 0, 'background-image': 'url('+img[el.id][imgInc[el.id]]+')' });
-			$('#ft-'+el.id+itemId).animate({ width: currWidth, opacity: 1 }, 2000);
+			$('#ft-'+el.id+itemId).animate({ width: currWidth, opacity: 1 }, 2500);
 		} else {
 			$('#ft-'+el.id+itemId).css({ height: 0, opacity: 0, 'background-image': 'url('+img[el.id][imgInc[el.id]]+')' });
-			$('#ft-'+el.id+itemId).animate({ height: opts[el.id].height, opacity: 1 }, 2000);
+			$('#ft-'+el.id+itemId).animate({ height: opts[el.id].height, opacity: 1 }, 2500);
 		}
 		
 		inc[el.id]++;
@@ -286,7 +286,7 @@
 	$.fn.jqFancyTransitions.defaults = {	
 		width: 500, // width of panel
 		height: 332, // height of panel
-		strips: 5, // number of strips
+		strips: 1, // number of strips
 		delay: 5000, // delay between images in ms
 		stripDelay: 50, // delay beetwen strips in ms
 		titleOpacity: 0.7, // opacity of title
