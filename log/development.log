@@ -7826,3 +7826,39 @@ Rendered public/_nav (1.1ms)
 Rendered public/_feature (1.3ms)
 Rendered layouts/_analytics (0.4ms)
 Completed in 57ms (View: 48, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-07-29 18:13:29) [GET]
+Rendering template within layouts/application
+Rendering public/index
+Rendered public/_nav (0.5ms)
+Rendered public/_feature (0.9ms)
+Rendered layouts/_analytics (0.2ms)
+Completed in 39ms (View: 38, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-07-29 18:14:00) [GET]
+Rendering template within layouts/application
+Rendering public/index
+Rendered public/_nav (0.4ms)
+Rendered public/_feature (0.6ms)
+Rendered layouts/_analytics (0.2ms)
+Completed in 22ms (View: 21, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-07-29 18:15:17) [GET]
+Rendering template within layouts/application
+Rendering public/index
+Rendered public/_nav (0.3ms)
+Rendered public/_feature (0.6ms)
+Rendered layouts/_analytics (0.1ms)
+Completed in 21ms (View: 20, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-07-29 18:16:44) [GET]
+Rendering template within layouts/application
+Rendering public/index
+Rendered public/_nav (0.4ms)
+Rendered public/_feature (0.4ms)
+Rendered layouts/_analytics (0.2ms)
+Completed in 26ms (View: 24, DB: 0) | 200 OK [http://127.0.0.1/]
