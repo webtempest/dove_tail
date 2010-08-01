@@ -1,0 +1,62 @@
+
+
+Processing PagesController#index (for 0.0.0.0 at 2010-07-29 19:13:25) [GET]
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/pages]
+
+
+Processing PagesController#index (for 0.0.0.0 at 2010-07-29 19:13:34) [GET]
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/pages]
+
+
+Processing PagesController#index (for 0.0.0.0 at 2010-07-29 19:19:52) [GET]
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/pages]
+
+
+Processing PagesController#index (for 0.0.0.0 at 2010-07-29 19:19:52) [GET]
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/pages]
+
+
+Processing PagesController#index (for 0.0.0.0 at 2010-07-29 19:21:05) [GET]
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/pages]
+
+
+Processing PagesController#index (for 0.0.0.0 at 2010-07-29 19:21:05) [GET]
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/pages]
+
+
+Processing PagesController#index (for 0.0.0.0 at 2010-07-29 19:21:26) [GET]
+Rendering template within layouts/admin
+Rendering pages/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/pages]
+
+
+Processing PagesController#index (for 0.0.0.0 at 2010-07-29 19:21:26) [GET]
+Rendering template within layouts/admin
+Rendering pages/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/pages]
+
+
+Processing PagesController#index (for 0.0.0.0 at 2010-07-29 19:25:11) [GET]
+Rendering template within layouts/admin
+Rendering pages/index
+Rendered layouts/_analytics (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/pages]
+
+
+Processing PagesController#index (for 0.0.0.0 at 2010-07-29 19:25:11) [GET]
+Rendering template within layouts/admin
+Rendering pages/index
+Rendered layouts/_analytics (0.1ms)
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/pages]

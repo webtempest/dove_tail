@@ -27,7 +27,7 @@ sand: #d9cb9e
 #header h1{text-indent: -9999px; background-image: url('images/logo.png') ; height: 100px; width: 275px;}
 #feature{background: #d9cb9e url('images/feature.jpg') repeat-x; height:220px;}
 #slider{height:220px;}
-#nav{background: #374140; height: 31px;}
+
 #content{background: #d9cb9e url('images/maintop.jpg') repeat-x;float:left; width:895px;margin-right:0;}
 h1 {font-size:2em;}
 hr {background-color: #c5b37a}

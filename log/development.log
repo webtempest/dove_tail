@@ -7862,3 +7862,836 @@ Rendered public/_nav (0.4ms)
 Rendered public/_feature (0.4ms)
 Rendered layouts/_analytics (0.2ms)
 Completed in 26ms (View: 24, DB: 0) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (27.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (96.9ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (3.9ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePages (20100729085251)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (49.6ms)[0m   [0mCREATE TABLE "pages" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "content" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100729085251')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("pages")[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-29 20:19:18) [GET]
+
+
+ActionController::RoutingError (No route matches "/pages" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing/route_set.rb:390:in `recognize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /home/mplatts/.rvm/rubies/ruby-1.8.7-p299/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /home/mplatts/.rvm/rubies/ruby-1.8.7-p299/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:49
+    /home/mplatts/.rvm/rubies/ruby-1.8.7-p299/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /home/mplatts/.rvm/rubies/ruby-1.8.7-p299/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /home/mplatts/Documents/websites/dove_tail/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-29 20:19:39) [GET]
+
+
+NoMethodError (undefined method `resources' for main:Object):
+    /config/routes.rb:4
+    /vendor/rails/actionpack/lib/action_controller/routing/route_set.rb:214:in `draw'
+    /config/routes.rb:1
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+    /vendor/rails/actionpack/lib/action_controller/routing/route_set.rb:259:in `load_routes!'
+    /vendor/rails/actionpack/lib/action_controller/routing/route_set.rb:240:in `load!'
+    /vendor/rails/actionpack/lib/action_controller/routing/route_set.rb:254:in `reload'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:150:in `reload_application'
+    /vendor/rails/activesupport/lib/active_support/callbacks.rb:178:in `send'
+    /vendor/rails/activesupport/lib/active_support/callbacks.rb:178:in `evaluate_method'
+    /vendor/rails/activesupport/lib/active_support/callbacks.rb:166:in `call'
+    /vendor/rails/activesupport/lib/active_support/callbacks.rb:90:in `run'
+    /vendor/rails/activesupport/lib/active_support/callbacks.rb:90:in `each'
+    /vendor/rails/activesupport/lib/active_support/callbacks.rb:90:in `send'
+    /vendor/rails/activesupport/lib/active_support/callbacks.rb:90:in `run'
+    /vendor/rails/activesupport/lib/active_support/callbacks.rb:277:in `run_callbacks'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:111:in `dispatch_unlocked'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /home/mplatts/.rvm/rubies/ruby-1.8.7-p299/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /home/mplatts/.rvm/rubies/ruby-1.8.7-p299/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:49
+    /home/mplatts/.rvm/rubies/ruby-1.8.7-p299/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /home/mplatts/.rvm/rubies/ruby-1.8.7-p299/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered /home/mplatts/Documents/websites/dove_tail/vendor/rails/actionpack/lib/action_controller/templates/rescues/_trace (41.7ms)
+Rendered /home/mplatts/Documents/websites/dove_tail/vendor/rails/actionpack/lib/action_controller/templates/rescues/_request_and_response (2.6ms)
+Rendering /home/mplatts/Documents/websites/dove_tail/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-07-29 20:19:49) [GET]
+Rendering template within layouts/admin
+Rendering pages/index
+Rendered layouts/_analytics (0.2ms)
+Completed in 16ms (View: 13, DB: 0) | 200 OK [http://127.0.0.1/pages]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-07-29 20:20:34) [GET]
+Rendering template within layouts/admin
+Rendering pages/index
+Rendered layouts/_analytics (0.1ms)
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/pages]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-07-29 20:21:36) [GET]
+Rendering template within layouts/admin
+Rendering pages/index
+Rendered layouts/_analytics (0.1ms)
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/pages]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-07-29 20:22:01) [GET]
+Rendering template within layouts/admin
+Rendering pages/index
+Rendered layouts/_analytics (0.1ms)
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/pages]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-07-29 20:24:13) [GET]
+Rendering template within layouts/admin
+Rendering pages/index
+Rendered layouts/_analytics (0.2ms)
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/pages]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-07-29 20:27:54) [GET]
+Rendering template within layouts/admin
+Rendering pages/index
+Rendered layouts/_analytics (0.1ms)
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://127.0.0.1/pages]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-07-29 20:28:29) [GET]
+Rendering template within layouts/admin
+Rendering pages/index
+
+
+ActionView::TemplateError (Missing template pages/_nav.erb in view path /home/mplatts/Documents/websites/dove_tail/app/views:) on line #22 of app/views/layouts/admin.haml:
+19:       #header.padding
+20:         %h1 Dove Tail Timbers Control Panel
+21:       #nav
+22:         = render :partial => "nav"
+23:       #content.padding
+24:         = yield
+25:       #footer
+
+    vendor/rails/actionpack/lib/action_view/template.rb:95:in `find_full_path'
+    vendor/rails/actionpack/lib/action_view/template.rb:16:in `initialize'
+    vendor/rails/actionpack/lib/action_view/base.rb:334:in `new'
+    vendor/rails/actionpack/lib/action_view/base.rb:334:in `_unmemoized__pick_template'
+    vendor/rails/activesupport/lib/active_support/memoizable.rb:70:in `_pick_template'
+    vendor/rails/actionpack/lib/action_view/partials.rb:199:in `_unmemoized__pick_partial_template'
+    vendor/rails/activesupport/lib/active_support/memoizable.rb:70:in `_pick_partial_template'
+    vendor/rails/actionpack/lib/action_view/partials.rb:152:in `render_partial'
+    vendor/rails/actionpack/lib/action_view/base.rb:258:in `render_without_haml'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.13/lib/haml/helpers/action_view_mods.rb:11:in `render'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.13/lib/haml/helpers.rb:90:in `non_haml'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.13/lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/layouts/admin.haml:22
+    vendor/rails/actionpack/lib/action_view/renderable.rb:39:in `send'
+    vendor/rails/actionpack/lib/action_view/renderable.rb:39:in `render'
+    vendor/rails/actionpack/lib/action_view/template.rb:73:in `render_template'
+    vendor/rails/actionpack/lib/action_view/base.rb:256:in `render_without_haml'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.13/lib/haml/helpers/action_view_mods.rb:13:in `render'
+    vendor/rails/actionpack/lib/action_view/base.rb:373:in `_render_with_layout'
+    vendor/rails/actionpack/lib/action_view/base.rb:254:in `render_without_haml'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.13/lib/haml/helpers/action_view_mods.rb:13:in `render'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1177:in `render_for_file'
+    vendor/rails/actionpack/lib/action_controller/base.rb:896:in `render_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/actionpack/lib/action_controller/base.rb:868:in `render_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1251:in `default_render'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1257:in `perform_action_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:617:in `call_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /home/mplatts/.rvm/rubies/ruby-1.8.7-p299/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    vendor/rails/actionpack/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    vendor/rails/actionpack/lib/action_controller/base.rb:524:in `send'
+    vendor/rails/actionpack/lib/action_controller/base.rb:524:in `process_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    vendor/rails/actionpack/lib/action_controller/session_management.rb:134:in `sass_old_process'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.13/lib/sass/plugin/rails.rb:27:in `process'
+    vendor/rails/actionpack/lib/action_controller/base.rb:392:in `process'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:184:in `handle_request'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel/rails.rb:76:in `process'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `synchronize'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `process'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+    vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /home/mplatts/.rvm/rubies/ruby-1.8.7-p299/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /home/mplatts/.rvm/rubies/ruby-1.8.7-p299/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    vendor/rails/railties/lib/commands/server.rb:49
+    /home/mplatts/.rvm/rubies/ruby-1.8.7-p299/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /home/mplatts/.rvm/rubies/ruby-1.8.7-p299/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered /home/mplatts/Documents/websites/dove_tail/vendor/rails/actionpack/lib/action_controller/templates/rescues/_trace (35.9ms)
+Rendered /home/mplatts/Documents/websites/dove_tail/vendor/rails/actionpack/lib/action_controller/templates/rescues/_request_and_response (0.7ms)
+Rendering /home/mplatts/Documents/websites/dove_tail/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-07-29 20:28:41) [GET]
+Rendering template within layouts/admin
+Rendering pages/index
+Rendered layouts/_nav (0.5ms)
+Rendered layouts/_analytics (0.1ms)
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://127.0.0.1/pages]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-07-29 20:29:20) [GET]
+Rendering template within layouts/admin
+Rendering pages/index
+Rendered layouts/_nav (0.3ms)
+Rendered layouts/_analytics (0.1ms)
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://127.0.0.1/pages]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-07-29 20:29:39) [GET]
+Rendering template within layouts/application
+Rendering public/index
+Rendered public/_nav (0.3ms)
+Rendered public/_feature (0.4ms)
+Rendered layouts/_analytics (0.1ms)
+Completed in 18ms (View: 16, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-07-30 08:40:06) [GET]
+Rendering template within layouts/admin
+Rendering pages/index
+ERROR: compiling _run_haml_app47views47layouts47admin46haml RAISED compile error
+/home/mplatts/Documents/websites/dove_tail/app/views/layouts/admin.haml:32: syntax error, unexpected kENSURE, expecting kEND
+...\n", -2, false);_erbout;ensure;@haml_buffer = @haml_buffer.u...
+                              ^
+/home/mplatts/Documents/websites/dove_tail/app/views/layouts/admin.haml:35: syntax error, unexpected $end, expecting kEND
+Function body:           def _run_haml_app47views47layouts47admin46haml(local_assigns)
+            old_output_buffer = output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:encoding=>nil, :attr_wrapper=>"'", :format=>:xhtml, :autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :preserve=>["textarea", "pre", "code"], :ugly=>false, :escape_html=>false});_erbout = _hamlout.buffer;__in_erb_template = true;;_hamlout.push_text("<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html>\n  <head>\n    <meta content='text/html; charset=iso-8859-1' http-equiv='Content-Type' />\n    <title>\n      #{
+
+
+
+
+_hamlout.adjust_tabs(3); _hamlout.format_script_false_false_false_false_false_true_false(( @title ||= "Dove Tail Timbers"
+));}\n    </title>\n    <meta content='' name='Description' />\n    <meta content='' name='Abstract' />\n    <meta content='' name='Keywords' />\n    #{
+
+
+_hamlout.adjust_tabs(-1); _hamlout.format_script_false_false_false_false_false_true_false(( stylesheet_link_tag 'print.css', :media => 'print'
+));}\n    #{_hamlout.format_script_false_false_false_false_false_true_false(( stylesheet_link_tag 'screen.css', 'admin.css', 'nav.css', :media => 'screen, projection'
+));}\n    <!--[if lt IE 8]>\n      #{
+_hamlout.adjust_tabs(1); _hamlout.format_script_false_false_false_false_false_true_false(( stylesheet_link_tag 'ie.css', :media => 'screen, projection'
+));}\n    <![endif]-->\n    #{
+_hamlout.adjust_tabs(-1); _hamlout.format_script_false_false_false_false_false_true_false(( javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js", 'transitions.js', 'hoverIntent.js', 'superfish.js', 'application.js'
+));}\n  </head>\n  <body class='index'>\n    <div class='container'>\n      <div class='padding' id='header'>\n        <h1>Dove Tail Timbers Control Panel</h1>\n      </div>\n      <div id='nav'>\n        #{
+
+
+
+
+
+_hamlout.adjust_tabs(2); _hamlout.format_script_false_false_false_false_false_true_false(( render :partial => "layouts/nav"
+));}\n      </div>\n      <div class='padding' id='content'>\n", 0, false);
+ if flash[:notice];
+_hamlout.push_text("        <p>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((flash[:notice]
+));}</p>\n", 0, false); else if flash[:alert];
+_hamlout.push_text("        <p>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((flash[:alert]
+));}</p>\n", 0, false);end;_hamlout.push_text("        #{_hamlout.format_script_false_false_false_false_false_true_false(( yield
+));}\n      </div>\n      <div id='footer'>\n        #{
+_hamlout.format_script_false_false_false_false_false_true_false(( yield :footer
+));}\n      </div>\n    </div>\n    #{_hamlout.adjust_tabs(-2); _hamlout.format_script_false_false_false_false_false_true_false(( render :partial => "layouts/analytics"
+));}\n  </body>\n</html>\n", -2, false);_erbout;ensure;@haml_buffer = @haml_buffer.upper;end;
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/mplatts/Documents/websites/dove_tail/app/views/layouts/admin.haml:35:in `compile!'
+/home/mplatts/Documents/websites/dove_tail/vendor/rails/actionpack/lib/action_view/renderable.rb:66:in `compile'
+/home/mplatts/Documents/websites/dove_tail/vendor/rails/actionpack/lib/action_view/renderable.rb:64:in `synchronize'
+/home/mplatts/Documents/websites/dove_tail/vendor/rails/actionpack/lib/action_view/renderable.rb:64:in `compile'
+/home/mplatts/Documents/websites/dove_tail/vendor/rails/actionpack/lib/action_view/renderable.rb:26:in `render'
+/home/mplatts/Documents/websites/dove_tail/vendor/rails/actionpack/lib/action_view/template.rb:73:in `render_template'
+/home/mplatts/Documents/websites/dove_tail/vendor/rails/actionpack/lib/action_view/base.rb:256:in `render_without_haml'
+/home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.13/lib/haml/helpers/action_view_mods.rb:13:in `render'
+/home/mplatts/Documents/websites/dove_tail/vendor/rails/actionpack/lib/action_view/base.rb:373:in `_render_with_layout'
+/home/mplatts/Documents/websites/dove_tail/vendor/rails/actionpack/lib/action_view/base.rb:254:in `render_without_haml'
+/home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.13/lib/haml/helpers/action_view_mods.rb:13:in `render'
+/home/mplatts/Documents/websites/dove_tail/vendor/rails/actionpack/lib/action_controller/base.rb:1177:in `render_for_file'
+/home/mplatts/Documents/websites/dove_tail/vendor/rails/actionpack/lib/action_controller/base.rb:896:in `render_without_benchmark'
+/home/mplatts/Documents/websites/dove_tail/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+/home/mplatts/Documents/websites/dove_tail/vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+/home/mplatts/Documents/websites/dove_tail/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+/home/mplatts/Documents/websites/dove_tail/vendor/rails/actionpack/lib/action_controller/base.rb:868:in `render_without_benchmark'
+/home/mplatts/Documents/websites/dove_tail/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+/home/mplatts/Documents/websites/dove_tail/vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+/home/mplatts/Documents/websites/dove_tail/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+/home/mplatts/Documents/websites/dove_tail/vendor/rails/actionpack/lib/action_controller/base.rb:1251:in `default_render'
+/home/mplatts/Documents/websites/dove_tail/vendor/rails/actionpack/lib/action_controller/base.rb:1257:in `perform_action_without_filters'
+/home/mplatts/Documents/websites/dove_tail/vendor/rails/actionpack/lib/action_controller/filters.rb:617:in `call_filters'
+/home/mplatts/Documents/websites/dove_tail/vendor/rails/actionpack/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/home/mplatts/Documents/websites/dove_tail/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/home/mplatts/.rvm/rubies/ruby-1.8.7-p299/lib/ruby/1.8/benchmark.rb:293:in `measure'
+/home/mplatts/Documents/websites/dove_tail/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/home/mplatts/Documents/websites/dove_tail/vendor/rails/actionpack/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+/home/mplatts/Documents/websites/dove_tail/vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+/home/mplatts/Documents/websites/dove_tail/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/home/mplatts/Documents/websites/dove_tail/vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+/home/mplatts/Documents/websites/dove_tail/vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+/home/mplatts/Documents/websites/dove_tail/vendor/rails/actionpack/lib/action_controller/base.rb:524:in `send'
+/home/mplatts/Documents/websites/dove_tail/vendor/rails/actionpack/lib/action_controller/base.rb:524:in `process_without_filters'
+/home/mplatts/Documents/websites/dove_tail/vendor/rails/actionpack/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+/home/mplatts/Documents/websites/dove_tail/vendor/rails/actionpack/lib/action_controller/session_management.rb:134:in `sass_old_process'
+/home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.13/lib/sass/plugin/rails.rb:27:in `process'
+/home/mplatts/Documents/websites/dove_tail/vendor/rails/actionpack/lib/action_controller/base.rb:392:in `process'
+/home/mplatts/Documents/websites/dove_tail/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:184:in `handle_request'
+/home/mplatts/Documents/websites/dove_tail/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+/home/mplatts/Documents/websites/dove_tail/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch'
+/home/mplatts/Documents/websites/dove_tail/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `synchronize'
+/home/mplatts/Documents/websites/dove_tail/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `dispatch'
+/home/mplatts/Documents/websites/dove_tail/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+/home/mplatts/Documents/websites/dove_tail/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:41:in `dispatch'
+/home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+/home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+/home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+/home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+/home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+/home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+/home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+/home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+/home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/bin/mongrel_rails:281
+/home/mplatts/Documents/websites/dove_tail/vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+/home/mplatts/Documents/websites/dove_tail/vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+/home/mplatts/Documents/websites/dove_tail/vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+/home/mplatts/Documents/websites/dove_tail/vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+/home/mplatts/Documents/websites/dove_tail/vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+/home/mplatts/.rvm/rubies/ruby-1.8.7-p299/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/home/mplatts/.rvm/rubies/ruby-1.8.7-p299/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+/home/mplatts/Documents/websites/dove_tail/vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+/home/mplatts/Documents/websites/dove_tail/vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+/home/mplatts/Documents/websites/dove_tail/vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+/home/mplatts/Documents/websites/dove_tail/vendor/rails/railties/lib/commands/server.rb:49
+/home/mplatts/.rvm/rubies/ruby-1.8.7-p299/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/home/mplatts/.rvm/rubies/ruby-1.8.7-p299/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+
+ActionView::TemplateError (compile error
+/home/mplatts/Documents/websites/dove_tail/app/views/layouts/admin.haml:32: syntax error, unexpected kENSURE, expecting kEND
+...\n", -2, false);_erbout;ensure;@haml_buffer = @haml_buffer.u...
+                              ^
+/home/mplatts/Documents/websites/dove_tail/app/views/layouts/admin.haml:35: syntax error, unexpected $end, expecting kEND) on line #32 of app/views/layouts/admin.haml:
+29:       #footer
+30:         = yield :footer
+31:     = render :partial => "layouts/analytics"
+32:         
+33: 
+34: 
+35:         
+
+    app/views/layouts/admin.haml:35:in `compile!'
+    vendor/rails/actionpack/lib/action_view/renderable.rb:66:in `compile'
+    vendor/rails/actionpack/lib/action_view/renderable.rb:64:in `synchronize'
+    vendor/rails/actionpack/lib/action_view/renderable.rb:64:in `compile'
+    vendor/rails/actionpack/lib/action_view/renderable.rb:26:in `render'
+    vendor/rails/actionpack/lib/action_view/template.rb:73:in `render_template'
+    vendor/rails/actionpack/lib/action_view/base.rb:256:in `render_without_haml'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.13/lib/haml/helpers/action_view_mods.rb:13:in `render'
+    vendor/rails/actionpack/lib/action_view/base.rb:373:in `_render_with_layout'
+    vendor/rails/actionpack/lib/action_view/base.rb:254:in `render_without_haml'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.13/lib/haml/helpers/action_view_mods.rb:13:in `render'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1177:in `render_for_file'
+    vendor/rails/actionpack/lib/action_controller/base.rb:896:in `render_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/actionpack/lib/action_controller/base.rb:868:in `render_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1251:in `default_render'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1257:in `perform_action_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:617:in `call_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /home/mplatts/.rvm/rubies/ruby-1.8.7-p299/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    vendor/rails/actionpack/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    vendor/rails/actionpack/lib/action_controller/base.rb:524:in `send'
+    vendor/rails/actionpack/lib/action_controller/base.rb:524:in `process_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    vendor/rails/actionpack/lib/action_controller/session_management.rb:134:in `sass_old_process'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.13/lib/sass/plugin/rails.rb:27:in `process'
+    vendor/rails/actionpack/lib/action_controller/base.rb:392:in `process'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:184:in `handle_request'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel/rails.rb:76:in `process'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `synchronize'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `process'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+    vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /home/mplatts/.rvm/rubies/ruby-1.8.7-p299/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /home/mplatts/.rvm/rubies/ruby-1.8.7-p299/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    vendor/rails/railties/lib/commands/server.rb:49
+    /home/mplatts/.rvm/rubies/ruby-1.8.7-p299/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /home/mplatts/.rvm/rubies/ruby-1.8.7-p299/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered /home/mplatts/Documents/websites/dove_tail/vendor/rails/actionpack/lib/action_controller/templates/rescues/_trace (219.9ms)
+Rendered /home/mplatts/Documents/websites/dove_tail/vendor/rails/actionpack/lib/action_controller/templates/rescues/_request_and_response (0.9ms)
+Rendering /home/mplatts/Documents/websites/dove_tail/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-07-30 08:40:21) [GET]
+Rendering template within layouts/admin
+Rendering pages/index
+
+
+Haml::SyntaxError (You don't need to use "- end" in Haml. Un-indent to close a block:
+- if foo?
+  %strong Foo!
+- else
+  Not foo.
+%p This line is un-indented, so it isn't part of the "if" block):
+    /app/views/layouts/admin.haml:28
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.13/lib/haml/precompiler.rb:229:in `process_line'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.13/lib/haml/precompiler.rb:178:in `precompile'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.13/lib/haml/engine.rb:121:in `initialize'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.13/lib/haml/template/plugin.rb:29:in `new'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.13/lib/haml/template/plugin.rb:29:in `compile'
+    /vendor/rails/actionpack/lib/action_view/template_handler.rb:11:in `call'
+    /vendor/rails/actionpack/lib/action_view/renderable.rb:21:in `_unmemoized_compiled_source'
+    /vendor/rails/activesupport/lib/active_support/memoizable.rb:57:in `compiled_source'
+    /vendor/rails/activesupport/lib/active_support/memoizable.rb:25:in `__send__'
+    /vendor/rails/activesupport/lib/active_support/memoizable.rb:25:in `memoize_all'
+    /vendor/rails/activesupport/lib/active_support/memoizable.rb:22:in `each'
+    /vendor/rails/activesupport/lib/active_support/memoizable.rb:22:in `memoize_all'
+    /vendor/rails/activesupport/lib/active_support/memoizable.rb:17:in `freeze'
+    /vendor/rails/activesupport/lib/active_support/memoizable.rb:70:in `_pick_template'
+    /vendor/rails/actionpack/lib/action_view/base.rb:256:in `render_without_haml'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.13/lib/haml/helpers/action_view_mods.rb:13:in `render'
+    /vendor/rails/actionpack/lib/action_view/base.rb:373:in `_render_with_layout'
+    /vendor/rails/actionpack/lib/action_view/base.rb:254:in `render_without_haml'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.13/lib/haml/helpers/action_view_mods.rb:13:in `render'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1177:in `render_for_file'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:896:in `render_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    /vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:868:in `render_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    /vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1251:in `default_render'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1257:in `perform_action_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:617:in `call_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /home/mplatts/.rvm/rubies/ruby-1.8.7-p299/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /vendor/rails/actionpack/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:524:in `send'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:524:in `process_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /vendor/rails/actionpack/lib/action_controller/session_management.rb:134:in `sass_old_process'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.13/lib/sass/plugin/rails.rb:27:in `process'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:392:in `process'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:184:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /home/mplatts/.rvm/rubies/ruby-1.8.7-p299/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /home/mplatts/.rvm/rubies/ruby-1.8.7-p299/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:49
+    /home/mplatts/.rvm/rubies/ruby-1.8.7-p299/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /home/mplatts/.rvm/rubies/ruby-1.8.7-p299/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered /home/mplatts/Documents/websites/dove_tail/vendor/rails/actionpack/lib/action_controller/templates/rescues/_trace (27.5ms)
+Rendered /home/mplatts/Documents/websites/dove_tail/vendor/rails/actionpack/lib/action_controller/templates/rescues/_request_and_response (0.5ms)
+Rendering /home/mplatts/Documents/websites/dove_tail/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-07-30 08:40:48) [GET]
+Rendering template within layouts/admin
+Rendering pages/index
+
+
+Haml::SyntaxError (You don't need to use "- end" in Haml. Un-indent to close a block:
+- if foo?
+  %strong Foo!
+- else
+  Not foo.
+%p This line is un-indented, so it isn't part of the "if" block):
+    /app/views/layouts/admin.haml:28
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.13/lib/haml/precompiler.rb:229:in `process_line'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.13/lib/haml/precompiler.rb:178:in `precompile'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.13/lib/haml/engine.rb:121:in `initialize'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.13/lib/haml/template/plugin.rb:29:in `new'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.13/lib/haml/template/plugin.rb:29:in `compile'
+    /vendor/rails/actionpack/lib/action_view/template_handler.rb:11:in `call'
+    /vendor/rails/actionpack/lib/action_view/renderable.rb:21:in `_unmemoized_compiled_source'
+    /vendor/rails/activesupport/lib/active_support/memoizable.rb:57:in `compiled_source'
+    /vendor/rails/activesupport/lib/active_support/memoizable.rb:25:in `__send__'
+    /vendor/rails/activesupport/lib/active_support/memoizable.rb:25:in `memoize_all'
+    /vendor/rails/activesupport/lib/active_support/memoizable.rb:22:in `each'
+    /vendor/rails/activesupport/lib/active_support/memoizable.rb:22:in `memoize_all'
+    /vendor/rails/activesupport/lib/active_support/memoizable.rb:17:in `freeze'
+    /vendor/rails/activesupport/lib/active_support/memoizable.rb:70:in `_pick_template'
+    /vendor/rails/actionpack/lib/action_view/base.rb:256:in `render_without_haml'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.13/lib/haml/helpers/action_view_mods.rb:13:in `render'
+    /vendor/rails/actionpack/lib/action_view/base.rb:373:in `_render_with_layout'
+    /vendor/rails/actionpack/lib/action_view/base.rb:254:in `render_without_haml'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.13/lib/haml/helpers/action_view_mods.rb:13:in `render'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1177:in `render_for_file'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:896:in `render_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    /vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:868:in `render_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    /vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1251:in `default_render'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1257:in `perform_action_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:617:in `call_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /home/mplatts/.rvm/rubies/ruby-1.8.7-p299/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /vendor/rails/actionpack/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:524:in `send'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:524:in `process_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /vendor/rails/actionpack/lib/action_controller/session_management.rb:134:in `sass_old_process'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.13/lib/sass/plugin/rails.rb:27:in `process'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:392:in `process'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:184:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /home/mplatts/.rvm/rubies/ruby-1.8.7-p299/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /home/mplatts/.rvm/rubies/ruby-1.8.7-p299/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:49
+    /home/mplatts/.rvm/rubies/ruby-1.8.7-p299/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /home/mplatts/.rvm/rubies/ruby-1.8.7-p299/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered /home/mplatts/Documents/websites/dove_tail/vendor/rails/actionpack/lib/action_controller/templates/rescues/_trace (74.1ms)
+Rendered /home/mplatts/Documents/websites/dove_tail/vendor/rails/actionpack/lib/action_controller/templates/rescues/_request_and_response (0.6ms)
+Rendering /home/mplatts/Documents/websites/dove_tail/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-07-30 08:40:55) [GET]
+Rendering template within layouts/admin
+Rendering pages/index
+Rendered layouts/_nav (0.3ms)
+Rendered layouts/_analytics (0.1ms)
+Completed in 14ms (View: 13, DB: 0) | 200 OK [http://127.0.0.1/pages]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-07-31 09:39:32) [GET]
+Rendering template within layouts/admin
+Rendering pages/index
+Rendered layouts/_nav (1.3ms)
+Rendered layouts/_analytics (0.2ms)
+Completed in 30ms (View: 25, DB: 0) | 200 OK [http://127.0.0.1/pages]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-31 10:34:02) [GET]
+
+
+NoMethodError (undefined method `active_scaffold' for PagesController:Class):
+    /app/controllers/pages_controller.rb:3
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:382:in `load_without_new_constant_marking'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:382:in `load_file'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:381:in `load_file'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:256:in `require_or_load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:427:in `load_missing_constant'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:77:in `const_missing'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:89:in `const_missing'
+    /vendor/rails/activesupport/lib/active_support/inflector.rb:352:in `constantize'
+    /vendor/rails/activesupport/lib/active_support/inflector.rb:351:in `each'
+    /vendor/rails/activesupport/lib/active_support/inflector.rb:351:in `constantize'
+    /vendor/rails/activesupport/lib/active_support/core_ext/string/inflections.rb:162:in `constantize'
+    /vendor/rails/actionpack/lib/action_controller/routing/route_set.rb:392:in `recognize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /home/mplatts/.rvm/gems/ruby-1.8.7-p299/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /home/mplatts/.rvm/rubies/ruby-1.8.7-p299/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /home/mplatts/.rvm/rubies/ruby-1.8.7-p299/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:49
+    /home/mplatts/.rvm/rubies/ruby-1.8.7-p299/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /home/mplatts/.rvm/rubies/ruby-1.8.7-p299/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered /home/mplatts/Documents/websites/dove_tail/vendor/rails/actionpack/lib/action_controller/templates/rescues/_trace (35.9ms)
+Rendered /home/mplatts/Documents/websites/dove_tail/vendor/rails/actionpack/lib/action_controller/templates/rescues/_request_and_response (1.7ms)
+Rendering /home/mplatts/Documents/websites/dove_tail/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)

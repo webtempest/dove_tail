@@ -1,11 +1,51 @@
 
 
 TODO:
-- centre header
-- images in 3 holders
-- menu setup
-- menu ajaxified?
+- rake rails:update (need a faster connection)
+- Admin login
+- CRUD pages
+- CRUD products
 
 Figures:
 
 feature_item thumbnails: 240x185
+
+SETUP DEVISE STEPS
+1. install devise --version=1.08
+2. script/generate devise_install
+3. development.rb:
+config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+4. added flash stuff to layout:
+        - if flash[:notice]
+          %p= flash[:notice]
+        - if flash[:alert]
+          %p= flash[:alert]
+5.
+
+
+TEST STEPS
+-gem install rspec-rails
+-script/generate rspec
+-script/generate rspec_controller
+-spec spec
+-delete spec/views and spec/helpers - apparently this guy doesnt use them
+-add this to spec/controllers/pages_controller_spec.rb:
+
+1. Add the integrate views thing (remember we deleted spec/views - guessing it used to be in there) 
+    describe PagesController do
+      integrate_views
+
+2. Now add the title stuff:
+    describe "GET 'index'" do
+        it "should be successful" do
+          get 'index'
+          response.should be_success
+        end
+        
+        it "should have the right title" do 
+          get 'index'
+          response.should have_tag("title", "Dove Tail Admin")
+        end
+      end
+  
+ 
