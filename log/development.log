@@ -8695,3 +8695,12 @@ NoMethodError (undefined method `active_scaffold' for PagesController:Class):
 Rendered /home/mplatts/Documents/websites/dove_tail/vendor/rails/actionpack/lib/action_controller/templates/rescues/_trace (35.9ms)
 Rendered /home/mplatts/Documents/websites/dove_tail/vendor/rails/actionpack/lib/action_controller/templates/rescues/_request_and_response (1.7ms)
 Rendering /home/mplatts/Documents/websites/dove_tail/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-08-02 08:35:19) [GET]
+Rendering template within layouts/application
+Rendering public/index
+Rendered public/_nav (0.3ms)
+Rendered public/_feature (0.4ms)
+Rendered layouts/_analytics (0.1ms)
+Completed in 17ms (View: 14, DB: 0) | 200 OK [http://127.0.0.1/]
