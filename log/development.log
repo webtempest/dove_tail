@@ -2621,3 +2621,600 @@ Rendered home/_feature.html.erb (0.8ms)
 Rendered layouts/_analytics.html.erb (0.4ms)
 Rendered home/index.html.erb within layouts/application (9.7ms)
 Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2010-08-11 17:58:06 +1000
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.2ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.1ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.8ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (0.2ms)[0m  SHOW TIME ZONE
+
+ActionController::RoutingError (No route matches "/login"):
+  
+
+Rendered /home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2010-08-11 18:27:23 +1000
+
+ActionController::RoutingError (No route matches "/signin"):
+  
+
+Rendered /home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2010-08-11 18:29:02 +1000
+
+ActionController::RoutingError (No route matches "/login"):
+  
+
+Rendered /home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2010-08-11 18:53:13 +1000
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.4ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.1ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.5ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (0.1ms)[0m  SHOW TIME ZONE
+  Processing by Devise::SessionsController#new as HTML
+  [1m[36mSQL (298.5ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+Rendered devise/shared/_links.haml (2.7ms)
+Rendered layouts/_analytics.html.erb (0.6ms)
+Rendered devise/sessions/new.html.haml within layouts/application (12.4ms)
+Completed 200 OK in 363ms (Views: 18.2ms | ActiveRecord: 300.0ms)
+
+
+Started GET "/users/signin" for 127.0.0.1 at 2010-08-11 18:54:21 +1000
+
+ActionController::RoutingError (No route matches "/users/signin"):
+  
+
+Rendered /home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2010-08-11 18:54:24 +1000
+  Processing by Devise::SessionsController#new as HTML
+  [1m[35mSQL (0.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+Rendered devise/shared/_links.haml (2.4ms)
+Rendered layouts/_analytics.html.erb (0.3ms)
+Rendered devise/sessions/new.html.haml within layouts/application (11.2ms)
+Completed 200 OK in 72ms (Views: 14.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2010-08-11 18:57:17 +1000
+
+ActionController::RoutingError (uninitialized constant Users):
+  
+
+Rendered /home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2010-08-11 19:02:41 +1000
+
+ActionController::RoutingError (uninitialized constant Users):
+  
+
+Rendered /home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2010-08-11 19:07:27 +1000
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.1ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.3ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (0.1ms)[0m  SHOW TIME ZONE
+
+ActionController::RoutingError (uninitialized constant Users):
+  
+
+Rendered /home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2010-08-11 19:07:28 +1000
+
+ActionController::RoutingError (uninitialized constant Users):
+  
+
+Rendered /home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2010-08-11 19:07:29 +1000
+
+ActionController::RoutingError (uninitialized constant Users):
+  
+
+Rendered /home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2010-08-11 19:08:56 +1000
+
+ActionController::RoutingError (uninitialized constant Admins):
+  app/controllers/users/sessions_controller.rb:1:in `<top (required)>'
+
+Rendered /home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2010-08-11 19:08:57 +1000
+
+ActionController::RoutingError (uninitialized constant Admins):
+  app/controllers/users/sessions_controller.rb:1:in `<top (required)>'
+
+Rendered /home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2010-08-11 19:09:47 +1000
+  Processing by Users::SessionsController#new as HTML
+ERROR: compiling _app_views_users_sessions_new_html_erb___1502499189288905501_26918200__3741850104505070661 RAISED /home/mplatts/Documents/websites/dove_tail/app/views/users/sessions/new.html.erb:26: syntax error, unexpected keyword_ensure, expecting keyword_end
+/home/mplatts/Documents/websites/dove_tail/app/views/users/sessions/new.html.erb:28: syntax error, unexpected $end, expecting keyword_end
+Function body:           def _app_views_users_sessions_new_html_erb___1502499189288905501_26918200__3741850104505070661(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "users/sessions/new";_old_output_buffer = @output_buffer;;@output_buffer = ActionView::OutputBuffer.new;@output_buffer.safe_concat('<h2> Sign in </h2>
+
+');@output_buffer.append_if_string=  form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| 
+@output_buffer.safe_concat('  <p>
+     ');@output_buffer.append= ( f.label :email );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('     <br />
+     ');@output_buffer.append= (  f.text_field :email );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  </p>
+  <p>
+    ');@output_buffer.append= ( f.label :password );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('    <br />
+    ');@output_buffer.append= ( f.password_field :password );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  </p> 
+   
+');   if devise_mapping.rememberable? 
+@output_buffer.safe_concat('  <p>
+      ');@output_buffer.append= ( f.check_box :remember_me );@output_buffer.safe_concat('      
+');@output_buffer.safe_concat('      ');@output_buffer.append= ( f.label :remember_me );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  </p>
+  <p>
+    ');@output_buffer.append= ( f.submit "Sign in" );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  </p>
+  
+');@output_buffer.append= ( render :partial => "devise/shared/links" );@output_buffer.safe_concat('
+');@output_buffer.to_s
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_view/template.rb:255:in `module_eval'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_view/template.rb:255:in `compile'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_view/template.rb:134:in `block in render'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/activesupport/lib/active_support/notifications.rb:54:in `instrument'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_view/template.rb:127:in `render'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_view/render/rendering.rb:59:in `block in _render_template'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/activesupport/lib/active_support/notifications.rb:52:in `block in instrument'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/activesupport/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/activesupport/lib/active_support/notifications.rb:52:in `instrument'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_view/render/rendering.rb:56:in `_render_template'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_view/render/rendering.rb:26:in `render'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/haml-3.0.15/lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/abstract_controller/rendering.rb:114:in `_render_template'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/abstract_controller/rendering.rb:108:in `render_to_body'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/abstract_controller/rendering.rb:101:in `render_to_string'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/abstract_controller/rendering.rb:92:in `render'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_controller/metal/rendering.rb:17:in `render'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/activesupport/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/home/mplatts/.rvm/rubies/ruby-1.9.2-rc1/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/activesupport/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/activerecord/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/abstract_controller/base.rb:148:in `process_action'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/activesupport/lib/active_support/callbacks.rb:440:in `_run__999893125324743571__process_action__1423368523117441280__callbacks'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/activesupport/lib/active_support/callbacks.rb:404:in `_run_process_action_callbacks'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/activesupport/lib/active_support/callbacks.rb:93:in `run_callbacks'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/activesupport/lib/active_support/notifications.rb:52:in `block in instrument'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/activesupport/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/activesupport/lib/active_support/notifications.rb:52:in `instrument'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/abstract_controller/base.rb:117:in `process'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/abstract_controller/rendering.rb:40:in `process'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_controller/metal.rb:133:in `dispatch'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_controller/metal.rb:173:in `block in action'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/routing/mapper.rb:33:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/rack-mount-0.6.9/lib/rack/mount/route_set.rb:148:in `block in call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/rack-mount-0.6.9/lib/rack/mount/code_generation.rb:89:in `block in recognize'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/rack-mount-0.6.9/lib/rack/mount/code_generation.rb:66:in `optimized_each'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/rack-mount-0.6.9/lib/rack/mount/code_generation.rb:88:in `recognize'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/rack-mount-0.6.9/lib/rack/mount/route_set.rb:139:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/routing/route_set.rb:492:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/haml-3.0.15/lib/sass/plugin/rack.rb:41:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/warden-0.10.7/lib/warden/manager.rb:35:in `block in call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/warden-0.10.7/lib/warden/manager.rb:34:in `catch'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/warden-0.10.7/lib/warden/manager.rb:34:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/middleware/best_standards_support.rb:8:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/middleware/head.rb:14:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/rack-1.2.1/lib/rack/methodoverride.rb:24:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/middleware/flash.rb:177:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/middleware/cookies.rb:268:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/activerecord/lib/active_record/query_cache.rb:32:in `block in call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/activerecord/lib/active_record/query_cache.rb:12:in `cache'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/activerecord/lib/active_record/query_cache.rb:31:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/activesupport/lib/active_support/callbacks.rb:410:in `_run_call_callbacks'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/rack-1.2.1/lib/rack/sendfile.rb:107:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/middleware/show_exceptions.rb:48:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/railties/lib/rails/rack/logger.rb:13:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/rack-1.2.1/lib/rack/runtime.rb:17:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/activesupport/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/rack-1.2.1/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:10:in `synchronize'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/middleware/static.rb:30:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/railties/lib/rails/application.rb:168:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/railties/lib/rails/application.rb:77:in `method_missing'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/railties/lib/rails/rack/log_tailer.rb:14:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/rack-1.2.1/lib/rack/content_length.rb:13:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/rack-1.2.1/lib/rack/handler/webrick.rb:52:in `service'
+/home/mplatts/.rvm/rubies/ruby-1.9.2-rc1/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+/home/mplatts/.rvm/rubies/ruby-1.9.2-rc1/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+/home/mplatts/.rvm/rubies/ruby-1.9.2-rc1/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+Rendered users/sessions/new.html.erb within layouts/application (1.0ms)
+Completed   in 6ms
+
+ActionView::Template::Error (/home/mplatts/Documents/websites/dove_tail/app/views/users/sessions/new.html.erb:26: syntax error, unexpected keyword_ensure, expecting keyword_end
+/home/mplatts/Documents/websites/dove_tail/app/views/users/sessions/new.html.erb:28: syntax error, unexpected $end, expecting keyword_end):
+    23:   
+    24: <%= render :partial => "devise/shared/links" %>
+  
+
+Rendered /home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (54.1ms)
+Rendered /home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (58.9ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2010-08-11 19:10:13 +1000
+  Processing by Users::SessionsController#new as HTML
+ERROR: compiling _app_views_users_sessions_new_html_erb___1502499189288905501_40678040__3741850104505070661 RAISED /home/mplatts/Documents/websites/dove_tail/app/views/users/sessions/new.html.erb:26: syntax error, unexpected keyword_ensure, expecting keyword_end
+/home/mplatts/Documents/websites/dove_tail/app/views/users/sessions/new.html.erb:28: syntax error, unexpected $end, expecting keyword_end
+Function body:           def _app_views_users_sessions_new_html_erb___1502499189288905501_40678040__3741850104505070661(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "users/sessions/new";_old_output_buffer = @output_buffer;;@output_buffer = ActionView::OutputBuffer.new;@output_buffer.safe_concat('<h2> Sign in </h2>
+
+');@output_buffer.append_if_string=  form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| 
+@output_buffer.safe_concat('  <p>
+     ');@output_buffer.append= ( f.label :email );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('     <br />
+     ');@output_buffer.append= (  f.text_field :email );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  </p>
+  <p>
+    ');@output_buffer.append= ( f.label :password );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('    <br />
+    ');@output_buffer.append= ( f.password_field :password );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  </p> 
+   
+');   if devise_mapping.rememberable? 
+@output_buffer.safe_concat('  <p>
+      ');@output_buffer.append= ( f.check_box :remember_me );@output_buffer.safe_concat('      
+');@output_buffer.safe_concat('      ');@output_buffer.append= ( f.label :remember_me );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  </p>
+  <p>
+    ');@output_buffer.append= ( f.submit "Sign in" );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  </p>
+'); end 
+@output_buffer.append= ( render :partial => "devise/shared/links" );@output_buffer.safe_concat('
+');@output_buffer.to_s
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_view/template.rb:255:in `module_eval'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_view/template.rb:255:in `compile'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_view/template.rb:134:in `block in render'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/activesupport/lib/active_support/notifications.rb:54:in `instrument'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_view/template.rb:127:in `render'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_view/render/rendering.rb:59:in `block in _render_template'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/activesupport/lib/active_support/notifications.rb:52:in `block in instrument'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/activesupport/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/activesupport/lib/active_support/notifications.rb:52:in `instrument'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_view/render/rendering.rb:56:in `_render_template'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_view/render/rendering.rb:26:in `render'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/haml-3.0.15/lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/abstract_controller/rendering.rb:114:in `_render_template'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/abstract_controller/rendering.rb:108:in `render_to_body'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/abstract_controller/rendering.rb:101:in `render_to_string'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/abstract_controller/rendering.rb:92:in `render'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_controller/metal/rendering.rb:17:in `render'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/activesupport/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/home/mplatts/.rvm/rubies/ruby-1.9.2-rc1/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/activesupport/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/activerecord/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/abstract_controller/base.rb:148:in `process_action'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/activesupport/lib/active_support/callbacks.rb:440:in `_run__999893125324743571__process_action__1423368523117441280__callbacks'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/activesupport/lib/active_support/callbacks.rb:404:in `_run_process_action_callbacks'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/activesupport/lib/active_support/callbacks.rb:93:in `run_callbacks'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/activesupport/lib/active_support/notifications.rb:52:in `block in instrument'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/activesupport/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/activesupport/lib/active_support/notifications.rb:52:in `instrument'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/abstract_controller/base.rb:117:in `process'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/abstract_controller/rendering.rb:40:in `process'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_controller/metal.rb:133:in `dispatch'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_controller/metal.rb:173:in `block in action'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/routing/mapper.rb:33:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/rack-mount-0.6.9/lib/rack/mount/route_set.rb:148:in `block in call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/rack-mount-0.6.9/lib/rack/mount/code_generation.rb:89:in `block in recognize'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/rack-mount-0.6.9/lib/rack/mount/code_generation.rb:66:in `optimized_each'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/rack-mount-0.6.9/lib/rack/mount/code_generation.rb:88:in `recognize'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/rack-mount-0.6.9/lib/rack/mount/route_set.rb:139:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/routing/route_set.rb:492:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/haml-3.0.15/lib/sass/plugin/rack.rb:41:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/warden-0.10.7/lib/warden/manager.rb:35:in `block in call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/warden-0.10.7/lib/warden/manager.rb:34:in `catch'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/warden-0.10.7/lib/warden/manager.rb:34:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/middleware/best_standards_support.rb:8:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/middleware/head.rb:14:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/rack-1.2.1/lib/rack/methodoverride.rb:24:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/middleware/flash.rb:177:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/middleware/cookies.rb:268:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/activerecord/lib/active_record/query_cache.rb:32:in `block in call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/activerecord/lib/active_record/query_cache.rb:12:in `cache'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/activerecord/lib/active_record/query_cache.rb:31:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/activesupport/lib/active_support/callbacks.rb:410:in `_run_call_callbacks'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/rack-1.2.1/lib/rack/sendfile.rb:107:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/middleware/show_exceptions.rb:48:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/railties/lib/rails/rack/logger.rb:13:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/rack-1.2.1/lib/rack/runtime.rb:17:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/activesupport/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/rack-1.2.1/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:10:in `synchronize'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/middleware/static.rb:30:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/railties/lib/rails/application.rb:168:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/railties/lib/rails/application.rb:77:in `method_missing'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/railties/lib/rails/rack/log_tailer.rb:14:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/rack-1.2.1/lib/rack/content_length.rb:13:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/rack-1.2.1/lib/rack/handler/webrick.rb:52:in `service'
+/home/mplatts/.rvm/rubies/ruby-1.9.2-rc1/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+/home/mplatts/.rvm/rubies/ruby-1.9.2-rc1/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+/home/mplatts/.rvm/rubies/ruby-1.9.2-rc1/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+Rendered users/sessions/new.html.erb within layouts/application (0.9ms)
+Completed   in 5ms
+
+ActionView::Template::Error (/home/mplatts/Documents/websites/dove_tail/app/views/users/sessions/new.html.erb:26: syntax error, unexpected keyword_ensure, expecting keyword_end
+/home/mplatts/Documents/websites/dove_tail/app/views/users/sessions/new.html.erb:28: syntax error, unexpected $end, expecting keyword_end):
+    23: <% end -%>
+    24: <%= render :partial => "devise/shared/links" %>
+  
+
+Rendered /home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (25.2ms)
+Rendered /home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (52.6ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2010-08-11 19:10:38 +1000
+  Processing by Users::SessionsController#new as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_users_sessions_new_html_erb___1502499189288905501_37061360__3741850104505070661 at /home/mplatts/Documents/websites/dove_tail/app/views/users/sessions/new.html.erb:3)
+Rendered devise/shared/_links.haml (8.1ms)
+Rendered layouts/_analytics.html.erb (0.3ms)
+Rendered users/sessions/new.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 23ms (Views: 22.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2010-08-11 19:12:45 +1000
+  Processing by Users::SessionsController#new as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_users_sessions_new_html_erb___1502499189288905501_36436160__3741850104505070661 at /home/mplatts/Documents/websites/dove_tail/app/views/users/sessions/new.html.erb:3)
+Rendered devise/shared/_links.haml (2.5ms)
+Rendered layouts/_analytics.html.erb (0.3ms)
+Rendered users/sessions/new.html.erb within layouts/admin (8.9ms)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2010-08-11 19:18:11 +1000
+  Processing by Users::SessionsController#new as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_users_sessions_new_html_erb___1502499189288905501_39737160__3741850104505070661 at /home/mplatts/Documents/websites/dove_tail/app/views/users/sessions/new.html.erb:9)
+Rendered devise/shared/_links.haml (2.6ms)
+Rendered layouts/_analytics.html.erb (0.3ms)
+Rendered users/sessions/new.html.erb within layouts/admin (9.4ms)
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2010-08-11 19:19:00 +1000
+  Processing by Users::SessionsController#new as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_users_sessions_new_html_erb___1502499189288905501_31006360__3741850104505070661 at /home/mplatts/Documents/websites/dove_tail/app/views/users/sessions/new.html.erb:9)
+Rendered devise/shared/_links.haml (2.7ms)
+Rendered layouts/_analytics.html.erb (0.3ms)
+Rendered users/sessions/new.html.erb within layouts/admin (10.2ms)
+Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-11 19:19:06 +1000
+  Processing by HomeController#index as HTML
+Rendered home/_nav.html.erb (0.4ms)
+Rendered home/_feature.html.erb (0.6ms)
+Rendered layouts/_analytics.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 10ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-11 19:23:26 +1000
+
+SyntaxError (/home/mplatts/Documents/websites/dove_tail/config/routes.rb:7: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  match 'sign_in' => 'users/sessions#new' as: "sign_in"
+                                            ^):
+  
+
+Rendered /home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+Rendered /home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-11 19:23:34 +1000
+  Processing by HomeController#index as HTML
+Rendered home/_nav.html.erb (0.5ms)
+Rendered home/_feature.html.erb (0.6ms)
+Rendered layouts/_analytics.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 11ms (Views: 10.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2010-08-11 19:23:37 +1000
+  Processing by Users::SessionsController#new as HTML
+Completed   in 0ms
+
+AbstractController::ActionNotFound (AbstractController::ActionNotFound):
+  
+
+Rendered /home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-11 19:37:22 +1000
+  Processing by HomeController#index as HTML
+Rendered home/_nav.html.erb (0.5ms)
+Rendered home/_feature.html.erb (0.6ms)
+Rendered home/index.html.erb within layouts/application (5.3ms)
+Completed   in 9ms
+
+ActionView::Template::Error (No route matches {:controller=>"users/sessions", :action=>"new"}):
+    42: </div>
+    43: 
+    44: <%- content_for :footer do %>
+    45:   <p>Copyright <%= link_to "Dove Tail Timbers", sign_in_url %> 2010</p>
+    46: <% end %>
+  app/views/home/index.html.erb:45:in `block in _app_views_home_index_html_erb___530176724326659578_30735760__3741850104505070661'
+  app/views/home/index.html.erb:44:in `_app_views_home_index_html_erb___530176724326659578_30735760__3741850104505070661'
+
+Rendered /home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (60.8ms)
+Rendered /home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (66.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-11 19:37:31 +1000
+  Processing by HomeController#index as HTML
+Rendered home/_nav.html.erb (0.4ms)
+Rendered home/_feature.html.erb (1.3ms)
+Rendered home/index.html.erb within layouts/application (7.0ms)
+Completed   in 11ms
+
+ActionView::Template::Error (No route matches {:controller=>"users/sessions", :action=>"new"}):
+    42: </div>
+    43: 
+    44: <%- content_for :footer do %>
+    45:   <p>Copyright <%= link_to "Dove Tail Timbers", sign_in_url %> 2010</p>
+    46: <% end %>
+  app/views/home/index.html.erb:45:in `block in _app_views_home_index_html_erb___530176724326659578_39678740__3741850104505070661'
+  app/views/home/index.html.erb:44:in `_app_views_home_index_html_erb___530176724326659578_39678740__3741850104505070661'
+
+Rendered /home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (51.7ms)
+Rendered /home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (57.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-11 19:38:48 +1000
+  Processing by HomeController#index as HTML
+Rendered home/_nav.html.erb (0.7ms)
+Rendered home/_feature.html.erb (0.8ms)
+Rendered layouts/_analytics.html.erb (0.6ms)
+Rendered home/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 15ms (Views: 14.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2010-08-11 19:38:54 +1000
+  Processing by Users::SessionsController#new as HTML
+Completed   in 0ms
+
+AbstractController::ActionNotFound (AbstractController::ActionNotFound):
+  
+
+Rendered /home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-11 19:41:04 +1000
+  Processing by HomeController#index as HTML
+Rendered home/_nav.html.erb (0.5ms)
+Rendered home/_feature.html.erb (0.7ms)
+Rendered layouts/_analytics.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/application (39.9ms)
+Completed 200 OK in 43ms (Views: 42.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2010-08-11 19:41:07 +1000
+  Processing by Users::SessionsController#new as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_users_sessions_new_html_erb___1502499189288905501_35779860__3741850104505070661 at /home/mplatts/Documents/websites/dove_tail/app/views/users/sessions/new.html.erb:9)
+Rendered devise/shared/_links.haml (2.6ms)
+Rendered layouts/_analytics.html.erb (0.3ms)
+Rendered users/sessions/new.html.erb within layouts/admin (9.0ms)
+Completed 200 OK in 11ms (Views: 10.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-11 19:41:09 +1000
+  Processing by HomeController#index as HTML
+Rendered home/_nav.html.erb (0.5ms)
+Rendered home/_feature.html.erb (0.7ms)
+Rendered layouts/_analytics.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2010-08-11 19:41:11 +1000
+  Processing by Users::SessionsController#new as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_users_sessions_new_html_erb___1502499189288905501_36200040__3741850104505070661 at /home/mplatts/Documents/websites/dove_tail/app/views/users/sessions/new.html.erb:9)
+Rendered devise/shared/_links.haml (2.5ms)
+Rendered layouts/_analytics.html.erb (0.3ms)
+Rendered users/sessions/new.html.erb within layouts/admin (9.0ms)
+Completed 200 OK in 11ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-11 19:41:14 +1000
+  Processing by HomeController#index as HTML
+Rendered home/_nav.html.erb (0.5ms)
+Rendered home/_feature.html.erb (0.6ms)
+Rendered layouts/_analytics.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/application (39.5ms)
+Completed 200 OK in 43ms (Views: 42.5ms | ActiveRecord: 0.0ms)

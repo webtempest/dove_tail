@@ -3,8 +3,12 @@ DoveTail::Application.routes.draw do
   get "admin/index"
 
 
-  devise_for :users
-
+  devise_for :users, :controllers => { :sessions => "users/sessions" }
+  
+  as :user do
+    get "/sign_in" => "users/sessions#new"
+  end
+  
   match '/about' => 'home#about'
   match '/contact' => 'home#contact'
 
