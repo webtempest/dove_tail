@@ -1,0 +1,46 @@
+<%= content_for(:nav){render :partial => 'nav'} %>
+<%= content_for(:feature){render :partial => "feature"} %>
+
+<div id="hometext">
+  <h1>Who are we?</h1>
+  <p>Dove Tail Timbers is a Tasmanian business devoted to using Tasmanian timber to it's highest potential. We incorporate European building techniques and style to create inspired and beautiful homes and other timber products.  </p>
+</div>
+
+<div id="contacttext">
+  <h1>Contact us:</h1>
+  <p>Bodie Cavanagh,</p>
+  <p>Email: bodie.cavanagh@gmail.com</p>
+  <p>Telephone: 0429132929</p>
+</div>
+
+<div class="featureitem">
+  <%= image_tag 'bodie-wood.jpg' %>
+  <div class="caption">
+    <h3>Craft Timber</h3>
+    <p>Bodie with Craft Timber</p>
+  </div>
+</div>
+
+<div class="featureitem">
+  <%= image_tag 'garden1.jpg' %>
+  <div class="caption">
+    <h3>Garden Bed</h3>
+    <p>ove Tailed Raised Garden Beds </p>
+  </div>
+</div>
+
+<div class="featureitem">
+  <%= image_tag 'cabin-mock.jpg' %>
+  <div class="caption">
+    <h3>Dove Tailed Homes</h3>
+    <p>An artist's impression of a final product</p>
+  </div>
+</div>
+
+<div class="v80">
+  <br />
+</div>
+
+<%- content_for :footer do %>
+  <p>Copyright Dove Tail Timbers 2010</p>
+<% end %>

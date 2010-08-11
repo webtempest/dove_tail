@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dove Tail Timbers<%= @title if @title %></title>
+    <%= stylesheet_link_tag 'screen', media: 'screen, projection' %>
+    <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js", 'transitions.js', 'hoverIntent.js', 'superfish.js', 'application.js' %>
+    <%= csrf_meta_tag %>
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="header">
+        <h1>Dove Tail Timbers</h1>
+      </div>
+      <div id="nav">
+        <%=yield :nav %>
+      </div>
+      <div id="feature">
+        <%= yield :feature %>
+      </div>
+      <div id="content" class="padding">
+        <%- if params[:notice] %><p class="notice"><%= notice %></p><% end %>
+        <%- if params[:alert] %><p class="alert"><%= alert %></p><% end %>
+        <%= yield %>
+      </div>
+      <div id="footer">
+        <%= yield :footer %>
+      </div>
+    </div>
+    
+  <%= render partial: 'layouts/analytics' %>
+  </body>
+</html>

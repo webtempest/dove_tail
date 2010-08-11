@@ -1,62 +1,637 @@
+  [1m[36mSQL (0.9ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.7ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.2ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (1.1ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (6.4ms)[0m  SHOW TIME ZONE
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (9.4ms)[0m  ROLLBACK
+  [1m[36mSQL (5.7ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.1ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.2ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (8.6ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (1.3ms)[0m  SHOW TIME ZONE
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
 
 
-Processing PagesController#index (for 0.0.0.0 at 2010-07-29 19:13:25) [GET]
-Rendering template within layouts/application
-Rendering pages/index
-Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/pages]
+Started GET "/users/sign_out" for 127.0.0.1 at 2010-08-05 22:30:50 +1000
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
 
 
-Processing PagesController#index (for 0.0.0.0 at 2010-07-29 19:13:34) [GET]
-Rendering template within layouts/application
-Rendering pages/index
-Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/pages]
+Started GET "/users/sign_out" for 127.0.0.1 at 2010-08-05 22:30:50 +1000
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.8ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (3.0ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.7ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (2.0ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (1.4ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (0.7ms)[0m  SHOW TIME ZONE
+  [1m[36mSQL (0.4ms)[0m  [1mBEGIN[0m
 
 
-Processing PagesController#index (for 0.0.0.0 at 2010-07-29 19:19:52) [GET]
-Rendering template within layouts/application
-Rendering pages/index
-Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/pages]
+Started GET "/users/sign_out" for 127.0.0.1 at 2010-08-06 15:11:23 +1000
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
 
 
-Processing PagesController#index (for 0.0.0.0 at 2010-07-29 19:19:52) [GET]
-Rendering template within layouts/application
-Rendering pages/index
-Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/pages]
+Started GET "/users/sign_out" for 127.0.0.1 at 2010-08-06 15:11:23 +1000
+  [1m[35mSQL (6.5ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.9ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.3ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.3ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (1.1ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (0.1ms)[0m  SHOW TIME ZONE
+  [1m[36mSQL (0.4ms)[0m  [1mBEGIN[0m
 
 
-Processing PagesController#index (for 0.0.0.0 at 2010-07-29 19:21:05) [GET]
-Rendering template within layouts/application
-Rendering pages/index
-Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/pages]
+Started GET "/users/sign_out" for 127.0.0.1 at 2010-08-06 15:12:15 +1000
+  [1m[35mSQL (6.4ms)[0m  ROLLBACK
+  [1m[36mSQL (2.0ms)[0m  [1mBEGIN[0m
 
 
-Processing PagesController#index (for 0.0.0.0 at 2010-07-29 19:21:05) [GET]
-Rendering template within layouts/application
-Rendering pages/index
-Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/pages]
+Started GET "/users/sign_out" for 127.0.0.1 at 2010-08-06 15:12:15 +1000
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.2ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.1ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.3ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (0.1ms)[0m  SHOW TIME ZONE
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  Processing by HomeController#index as HTML
+Completed   in 8ms
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  Processing by HomeController#index as HTML
+Completed   in 1ms
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.2ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (1.5ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.1ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.3ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (0.1ms)[0m  SHOW TIME ZONE
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 2.3ms)
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  Processing by HomeController#index as HTML
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.2ms)
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.2ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.8ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.4ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.4ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.8ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (0.1ms)[0m  SHOW TIME ZONE
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 2.9ms)
+  [1m[35mSQL (0.3ms)[0m  ROLLBACK
+  [1m[36mSQL (0.4ms)[0m  [1mBEGIN[0m
+  Processing by HomeController#index as HTML
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.7ms)
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.1ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (1.0ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (0.1ms)[0m  SHOW TIME ZONE
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 1.8ms)
+  [1m[35mSQL (0.3ms)[0m  ROLLBACK
+  [1m[36mSQL (0.5ms)[0m  [1mBEGIN[0m
+  Processing by HomeController#index as HTML
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.7ms)
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.1ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.7ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (0.1ms)[0m  SHOW TIME ZONE
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 1.6ms)
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  Processing by HomeController#index as HTML
+Completed 200 OK in 2ms (Views: 2.2ms | ActiveRecord: 0.4ms)
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.8ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.3ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (0.1ms)[0m  SHOW TIME ZONE
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 1.8ms)
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  Processing by HomeController#index as HTML
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.2ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.1ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.3ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (0.1ms)[0m  SHOW TIME ZONE
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.8ms)
+  [1m[35mSQL (0.4ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  Processing by HomeController#index as HTML
+Completed 200 OK in 1ms (Views: 1.3ms | ActiveRecord: 0.6ms)
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.2ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.5ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.3ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.2ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.5ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (0.2ms)[0m  SHOW TIME ZONE
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 2.2ms)
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  Processing by HomeController#index as HTML
+Completed 200 OK in 1ms (Views: 1.3ms | ActiveRecord: 0.4ms)
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.2ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.1ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.5ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (0.1ms)[0m  SHOW TIME ZONE
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.6ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.4ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.4ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (1.3ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW TIME ZONE
+  [1m[36mSQL (1.6ms)[0m  [1mBEGIN[0m
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 5.0ms)
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  Processing by HomeController#index as HTML
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.2ms)
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.2ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.1ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.3ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (0.1ms)[0m  SHOW TIME ZONE
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.9ms)
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  Processing by HomeController#index as HTML
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.2ms)
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.6ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.4ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.3ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.8ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (0.5ms)[0m  SHOW TIME ZONE
+  [1m[36mSQL (0.3ms)[0m  [1mBEGIN[0m
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 3.3ms)
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  Processing by HomeController#index as HTML
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms)
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.1ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.6ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (0.1ms)[0m  SHOW TIME ZONE
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 1.5ms)
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  Processing by HomeController#index as HTML
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  Processing by HomeController#about as HTML
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.4ms)
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  Processing by HomeController#about as HTML
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  Processing by HomeController#contact as HTML
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.3ms)
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  Processing by HomeController#contact as HTML
+Completed 200 OK in 1ms (Views: 1.3ms | ActiveRecord: 0.3ms)
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.2ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.1ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.6ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (0.1ms)[0m  SHOW TIME ZONE
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 1.6ms)
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.5ms)[0m  [1mBEGIN[0m
+  Processing by HomeController#index as HTML
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.6ms)
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  Processing by HomeController#about as HTML
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms)
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  Processing by HomeController#about as HTML
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.2ms)
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  Processing by HomeController#contact as HTML
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms)
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  Processing by HomeController#contact as HTML
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.4ms)
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.1ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.4ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (0.1ms)[0m  SHOW TIME ZONE
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
 
 
-Processing PagesController#index (for 0.0.0.0 at 2010-07-29 19:21:26) [GET]
-Rendering template within layouts/admin
-Rendering pages/index
-Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/pages]
+Started GET "/users/sign_out" for 127.0.0.1 at 2010-08-07 18:42:35 +1000
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
 
 
-Processing PagesController#index (for 0.0.0.0 at 2010-07-29 19:21:26) [GET]
-Rendering template within layouts/admin
-Rendering pages/index
-Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/pages]
+Started GET "/users/sign_out" for 127.0.0.1 at 2010-08-07 18:42:36 +1000
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (1.8ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.1ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.5ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (0.1ms)[0m  SHOW TIME ZONE
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
 
 
-Processing PagesController#index (for 0.0.0.0 at 2010-07-29 19:25:11) [GET]
-Rendering template within layouts/admin
-Rendering pages/index
-Rendered layouts/_analytics (0.1ms)
-Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/pages]
+Started GET "/users/sign_out" for 127.0.0.1 at 2010-08-07 19:15:37 +1000
+  Processing by Devise::SessionsController#destroy as HTML
+Redirected to http://www.example.com/
+Completed 302 Found in 1ms
 
 
-Processing PagesController#index (for 0.0.0.0 at 2010-07-29 19:25:11) [GET]
-Rendering template within layouts/admin
-Rendering pages/index
-Rendered layouts/_analytics (0.1ms)
-Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/pages]
+Started GET "/" for 127.0.0.1 at 2010-08-07 19:15:37 +1000
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 3.0ms)
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2010-08-07 19:15:37 +1000
+  Processing by Devise::SessionsController#destroy as HTML
+Redirected to http://www.example.com/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-07 19:15:37 +1000
+  Processing by HomeController#index as HTML
+Completed 200 OK in 1ms (Views: 1.3ms | ActiveRecord: 0.3ms)
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.6ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+PGError: ERROR:  relation "users" does not exist
+LINE 4:              WHERE a.attrelid = '"users"'::regclass
+                                        ^
+:             SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+              FROM pg_attribute a LEFT JOIN pg_attrdef d
+                ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+             WHERE a.attrelid = '"users"'::regclass
+               AND a.attnum > 0 AND NOT a.attisdropped
+             ORDER BY a.attnum
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.7ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.5ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.4ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (0.1ms)[0m  SHOW TIME ZONE
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.2ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (1.0ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (0.1ms)[0m  SHOW TIME ZONE
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.1ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.4ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (1.0ms)[0m  SHOW TIME ZONE
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.1ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.5ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (0.2ms)[0m  SHOW TIME ZONE
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 31ms (Views: 30.3ms | ActiveRecord: 1.5ms)
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  Processing by HomeController#index as HTML
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.3ms)
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  Processing by HomeController#about as HTML
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms)
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  Processing by HomeController#about as HTML
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.2ms)
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  Processing by HomeController#contact as HTML
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.2ms)
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  Processing by HomeController#contact as HTML
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms)
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  Processing by AdminController#index as HTML
+Completed   in 0ms
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  Processing by AdminController#login as HTML
+Completed   in 3ms
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  Processing by AdminController#login as HTML
+Completed   in 1ms
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  Processing by AdminController#logout as HTML
+Completed   in 0ms
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.7ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.2ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.1ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.3ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (1.0ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (0.1ms)[0m  SHOW TIME ZONE
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 50ms (Views: 11.2ms | ActiveRecord: 2.6ms)
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  Processing by HomeController#index as HTML
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms)
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  Processing by HomeController#about as HTML
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.2ms)
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  Processing by HomeController#about as HTML
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms)
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  Processing by HomeController#contact as HTML
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.2ms)
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  Processing by HomeController#contact as HTML
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.1ms)
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  Processing by AdminController#index as HTML
+Completed   in 1ms
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  Processing by AdminController#login as HTML
+Completed   in 4ms
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  Processing by AdminController#login as HTML
+Completed   in 1ms
+  [1m[35mSQL (0.3ms)[0m  ROLLBACK
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  Processing by AdminController#logout as HTML
+Completed   in 0ms
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.2ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.1ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.4ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (0.1ms)[0m  SHOW TIME ZONE
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 1.1ms)
+  [1m[35mSQL (0.4ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  Processing by HomeController#index as HTML
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.5ms)
+  [1m[35mSQL (0.7ms)[0m  ROLLBACK
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  Processing by HomeController#about as HTML
+Completed 200 OK in 4ms (Views: 4.0ms | ActiveRecord: 0.9ms)
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  Processing by HomeController#about as HTML
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.3ms)
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  Processing by HomeController#contact as HTML
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.5ms)
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  Processing by HomeController#contact as HTML
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.3ms)
+  [1m[35mSQL (0.5ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  Processing by AdminController#index as HTML
+Completed   in 0ms
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.4ms)[0m  [1mBEGIN[0m
+  Processing by AdminController#login as HTML
+Completed   in 4ms
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  Processing by AdminController#login as HTML
+Completed   in 1ms
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  Processing by AdminController#logout as HTML
+Completed   in 0ms
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (1.1ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.2ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (1.7ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (0.1ms)[0m  SHOW TIME ZONE
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK

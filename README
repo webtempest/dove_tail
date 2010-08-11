@@ -1,0 +1,17 @@
+Dove Tail Website - Rails 3 Version
+
+- TODO 
+1. Admin
+2. Basic Layout CRUD
+3. Product Page CRUD
+
+Have done:
+- added a feature
+- used step definitions from devise github for cucumber
+- created factories.rb in spec/ to make some factories
+- Added a factory for user
+    Factory.define :user do |user|
+      user.name 'Bodie'
+      user.email 'bodie@dovetailtimbers.com'
+      user.password '12345'
+    end

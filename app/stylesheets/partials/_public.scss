@@ -1,0 +1,180 @@
+/* NOTES
+ *nav in nav.css */
+
+/* DIMENSIONS
+ *width: 950
+ *padding: 15 right 40 left = 55
+ *combined width: 895
+ *
+ *featurebanner:
+ *950x220
+ *
+ *featureimg:
+ *240x185
+ *
+ *COLORS
+ *moss: #374140
+ *sand: #d9cb9e */
+
+body {
+  @include blueprint-typography(true);
+  @include blueprint-utilities;
+  @include blueprint-debug;
+  @include blueprint-interaction;
+  @include blueprint-grid;
+   }
+
+.container {
+  background-color: #d9cb9e; }
+
+#header {
+  background: #d9cb9e url("images/header.jpg") repeat-x;
+  height: 100px;
+  h1 {
+    text-indent: -9999px;
+    background-image: url("images/logo.png");
+    height: 100px;
+    width: 275px; } }
+
+#feature {
+  background: #d9cb9e url("images/feature.jpg") repeat-x;
+  height: 220px; }
+
+#slider {
+  height: 220px; }
+
+#content {
+  background: #d9cb9e url("images/maintop.jpg") repeat-x;
+  float: left;
+  width: 895px;
+  margin-right: 0; }
+
+h1 {
+  font-size: 2em; }
+
+hr {
+  background-color: #c5b37a; }
+
+/* footer */
+
+#footer, #header, #nav, #feature {
+  float: left;
+  margin-right: 10px;
+  width: 950px;
+  margin-right: 0; }
+
+#footer {
+  background: #d9cb9e url("images/maintop.jpg") repeat-x;
+  height: 76px;
+  p {
+    padding: 40px 0 0 40px; } }
+
+/* feature items */
+
+.featureitem {
+  width: 240px;
+  background: url("images/featureitem.jpg") no-repeat right top;
+  height: 267px;
+  float: left;
+  padding-left: 40px;
+  img {
+    position: relative;
+    top: 8px;
+    left: -7px; }
+  .caption {
+    position: relative;
+    top: -15px;
+    left: -2px;
+    h3 {
+      background: none repeat scroll 0 0 black;
+      color: white;
+      left: -5px;
+      margin-bottom: 0.2em;
+      opacity: 0.7;
+      padding-left: 7px;
+      position: relative; }
+    p {
+      padding-right: 0.8em; } } }
+
+/* CLASSES */
+
+body {
+  background-color: #374140; }
+
+div {
+  &.section, &.entry {
+    float: left;
+    margin-right: 10px;
+    width: 230px; } }
+
+.feeds {
+  float: left;
+  margin-right: 10px;
+  width: 230px; }
+
+#content.padding {
+  padding: 2em 15px 0px 40px; }
+
+.padding-top {
+  padding-top: 20px; }
+
+.v40 {
+  height: 40px;
+  float: left;
+  background-color: transparent;
+  display: block;
+  width: 100%; }
+
+/*SLIDER */
+
+.slide {
+  float: left;
+  position: relative; }
+
+.stop {
+  position: absolute;
+  left: 1px; }
+
+/* title */
+
+.ft-title {
+  padding: 0 10px 0 10px;
+  color: #d9cb9e; }
+
+/* next and prev */
+
+.ft-next {
+  text-decoration: none;
+  background-color: black;
+  opacity: 0.4;
+  color: #d9cb9e;
+  padding: 0 10px 0 10px; }
+
+a:visited.ft-next, a:visited.ft-prev{
+  color: #d9cb9e;
+}
+
+a {outline: none; }
+a img {outline: none; }
+
+.ft-prev {
+  text-decoration: none;
+  background-color: black;
+  opacity: 0.4;
+  color: #d9cb9e;
+  padding: 0 10px 0 10px;
+  -moz-border-radius-topright: 2ex;
+  -webkit-border-top-right-radius: 2ex;
+  -moz-border-radius-bottomright: 2ex;
+  -webkit-border-bottom-right-radius: 2ex; }
+
+.ft-next {
+  -moz-border-radius-topleft: 2ex;
+  -webkit-border-top-left-radius: 2ex;
+  -moz-border-radius-bottomleft: 2ex;
+  -webkit-border-bottom-left-radius: 2ex;
+  &:hover {
+    color: #333333; } }
+
+a:hover.ft-prev, a:hover.ft-next  {
+  color: #333333; }
