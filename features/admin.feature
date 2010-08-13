@@ -4,13 +4,12 @@ Feature: Admin
   I want a backend to the website that allows editing
 
   Background:
-    Given I am logged in as:
+    Given I login as:
     |email|password|
-    |bodie@dovetailtimbers.com|12345|
-    When I login
-    Then I should see the text "You have logged in successfully"
-    And the "admin" view should render
-  
+    |plattsmw@gmail.com|123456|
+    And I go to the user_root page
+    Then I should see "Welcome Bodie" within "h1"
+    
   Scenario: User adds a new page
     When I am on create page
     When I fill in the form with the following values:

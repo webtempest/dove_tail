@@ -635,3 +635,1396 @@ Completed   in 0ms
   [1m[35mSQL (0.1ms)[0m  SHOW TIME ZONE
   [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
   [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.2ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.2ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.6ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (0.1ms)[0m  SHOW TIME ZONE
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.5ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.2ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.5ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (0.5ms)[0m  SHOW TIME ZONE
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (276.2ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.1ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.2ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.4ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (0.1ms)[0m  SHOW TIME ZONE
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.2ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (25.4ms)[0m   SELECT tablename
+ FROM pg_tables
+ WHERE schemaname = ANY (current_schemas(false))
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mUser Load (13.7ms)[0m  SELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('bodie@dovetailtimbers.com')) LIMIT 1
+  [1m[36mSQL (23.7ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.1ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.3ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (0.1ms)[0m  SHOW TIME ZONE
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.2ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.5ms)[0m   SELECT tablename
+ FROM pg_tables
+ WHERE schemaname = ANY (current_schemas(false))
+  [1m[36mSQL (0.7ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('bodie@dovetailtimbers.com')) LIMIT 1
+  [1m[36mPK and serial sequence (63.5ms)[0m  [1m SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"users"'::regclass
+[0m
+  [1m[35mSQL (37.9ms)[0m  INSERT INTO "users" ("created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "password_salt", "remember_created_at", "remember_token", "reset_password_token", "sign_in_count", "updated_at") VALUES ('2010-08-12 11:54:57.970112', NULL, NULL, 'bodie@dovetailtimbers.com', '$2a$10$qwAQf497YgiylP6Akze/uuM8S0t6OXfkBntY1guis8xrG/HLlnLzy', NULL, NULL, '$2a$10$qwAQf497YgiylP6Akze/uu', NULL, NULL, NULL, 0, '2010-08-12 11:54:57.970112') RETURNING "id"
+  [1m[36mSQL (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('bodie@dovetailtimbers.com')) LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[36mSQL (0.2ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.5ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.1ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.4ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (0.1ms)[0m  SHOW TIME ZONE
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.5ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.6ms)[0m   SELECT tablename
+ FROM pg_tables
+ WHERE schemaname = ANY (current_schemas(false))
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('plattsmw@gmail.com')) LIMIT 1
+  [1m[36mPK and serial sequence (2.1ms)[0m  [1m SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"users"'::regclass
+[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "users" ("created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "password_salt", "remember_created_at", "remember_token", "reset_password_token", "sign_in_count", "updated_at") VALUES ('2010-08-12 11:56:07.196329', NULL, NULL, 'plattsmw@gmail.com', '$2a$10$nlbcuztUK0rbG50K6SUQIOJcU9rNIXnlgAMB.6CYO4FFZcNbR4lti', NULL, NULL, '$2a$10$nlbcuztUK0rbG50K6SUQIO', NULL, NULL, NULL, 0, '2010-08-12 11:56:07.196329') RETURNING "id"
+  [1m[36mSQL (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('bodie@dovetailtimbers.com')) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "password_salt", "remember_created_at", "remember_token", "reset_password_token", "sign_in_count", "updated_at") VALUES ('2010-08-12 11:56:07.303287', NULL, NULL, 'bodie@dovetailtimbers.com', '$2a$10$U1kQ2dGHFQKIQqXgxRVCmuNA.GqM2eiXE/CvlU3pX/I9/Isp1opZa', NULL, NULL, '$2a$10$U1kQ2dGHFQKIQqXgxRVCmu', NULL, NULL, NULL, 0, '2010-08-12 11:56:07.303287') RETURNING "id"
+  [1m[36mSQL (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (1.5ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.2ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.5ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (0.1ms)[0m  SHOW TIME ZONE
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (3.8ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.1ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.5ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (0.1ms)[0m  SHOW TIME ZONE
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (5.4ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mSQL (0.2ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.1ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.4ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (0.1ms)[0m  SHOW TIME ZONE
+  [1m[36mSQL (1.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.8ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2010-08-12 22:30:21 +1000
+  Processing by Users::SessionsController#new as HTML
+Rendered devise/shared/_links.haml (3.0ms)
+Rendered layouts/_analytics.html.erb (0.3ms)
+Rendered users/sessions/new.html.erb within layouts/admin (10.2ms)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 5.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2010-08-12 22:30:22 +1000
+  Processing by Users::SessionsController#create as HTML
+  Parameters: {"_snowman"=>"☃", "user"=>{"email"=>"plattsmw@gmail.com}", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mSQL (3.2ms)[0m  [1m SELECT tablename
+ FROM pg_tables
+ WHERE schemaname = ANY (current_schemas(false))
+[0m
+  [1m[35mSQL (16.2ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mUser Load (2.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."email" = 'plattsmw@gmail.com}') LIMIT 1[0m
+Completed   in 255ms
+  Processing by Users::SessionsController#new as HTML
+  Parameters: {"_snowman"=>"☃", "user"=>{"email"=>"plattsmw@gmail.com}", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+Rendered devise/shared/_links.haml (0.7ms)
+Rendered layouts/_analytics.html.erb (0.8ms)
+Rendered users/sessions/new.html.erb within layouts/admin (94.7ms)
+Completed 200 OK in 95ms (Views: 95.2ms | ActiveRecord: 21.3ms)
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.2ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.1ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.4ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (0.1ms)[0m  SHOW TIME ZONE
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.6ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2010-08-12 22:30:58 +1000
+  Processing by Users::SessionsController#new as HTML
+Rendered devise/shared/_links.haml (2.6ms)
+Rendered layouts/_analytics.html.erb (0.3ms)
+Rendered users/sessions/new.html.erb within layouts/admin (9.8ms)
+Completed 200 OK in 12ms (Views: 12.1ms | ActiveRecord: 3.7ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2010-08-12 22:30:58 +1000
+  Processing by Users::SessionsController#create as HTML
+  Parameters: {"_snowman"=>"☃", "user"=>{"email"=>"plattsmw@gmail.com}", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mSQL (1.5ms)[0m  [1m SELECT tablename
+ FROM pg_tables
+ WHERE schemaname = ANY (current_schemas(false))
+[0m
+  [1m[35mSQL (0.8ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."email" = 'plattsmw@gmail.com}') LIMIT 1[0m
+Completed   in 159ms
+  Processing by Users::SessionsController#new as HTML
+  Parameters: {"_snowman"=>"☃", "user"=>{"email"=>"plattsmw@gmail.com}", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+Rendered devise/shared/_links.haml (0.7ms)
+Rendered layouts/_analytics.html.erb (0.1ms)
+Rendered users/sessions/new.html.erb within layouts/admin (5.2ms)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 3.1ms)
+  [1m[35mSQL (0.3ms)[0m  ROLLBACK
+  [1m[36mSQL (0.2ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.5ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.6ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.7ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (0.2ms)[0m  SHOW TIME ZONE
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.4ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2010-08-12 22:32:05 +1000
+  Processing by Users::SessionsController#new as HTML
+Rendered devise/shared/_links.haml (2.6ms)
+Rendered layouts/_analytics.html.erb (12.3ms)
+Rendered users/sessions/new.html.erb within layouts/admin (21.8ms)
+Completed 200 OK in 26ms (Views: 25.1ms | ActiveRecord: 4.8ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2010-08-12 22:32:05 +1000
+  Processing by Users::SessionsController#create as HTML
+  Parameters: {"_snowman"=>"☃", "user"=>{"email"=>"plattsmw@gmail.com}", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mSQL (1.5ms)[0m  [1m SELECT tablename
+ FROM pg_tables
+ WHERE schemaname = ANY (current_schemas(false))
+[0m
+  [1m[35mSQL (0.6ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."email" = 'plattsmw@gmail.com}') LIMIT 1[0m
+Completed   in 185ms
+  Processing by Users::SessionsController#new as HTML
+  Parameters: {"_snowman"=>"☃", "user"=>{"email"=>"plattsmw@gmail.com}", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+Rendered devise/shared/_links.haml (0.7ms)
+Rendered layouts/_analytics.html.erb (0.0ms)
+Rendered users/sessions/new.html.erb within layouts/admin (4.6ms)
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 3.1ms)
+  [1m[35mSQL (0.3ms)[0m  ROLLBACK
+  [1m[36mSQL (0.2ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.3ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.4ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (0.1ms)[0m  SHOW TIME ZONE
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.2ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2010-08-12 22:32:44 +1000
+  Processing by Users::SessionsController#new as HTML
+Rendered devise/shared/_links.haml (2.9ms)
+Rendered layouts/_analytics.html.erb (0.4ms)
+Rendered users/sessions/new.html.erb within layouts/admin (10.7ms)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 3.5ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2010-08-12 22:32:44 +1000
+  Processing by Users::SessionsController#create as HTML
+  Parameters: {"_snowman"=>"☃", "user"=>{"email"=>"plattsmw@gmail.com}", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mSQL (1.5ms)[0m  [1m SELECT tablename
+ FROM pg_tables
+ WHERE schemaname = ANY (current_schemas(false))
+[0m
+  [1m[35mSQL (0.6ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."email" = 'plattsmw@gmail.com}') LIMIT 1[0m
+Completed   in 158ms
+  Processing by Users::SessionsController#new as HTML
+  Parameters: {"_snowman"=>"☃", "user"=>{"email"=>"plattsmw@gmail.com}", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+Rendered devise/shared/_links.haml (0.6ms)
+Rendered layouts/_analytics.html.erb (0.0ms)
+Rendered users/sessions/new.html.erb within layouts/admin (37.5ms)
+Completed 200 OK in 39ms (Views: 38.3ms | ActiveRecord: 3.0ms)
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.2ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.5ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.3ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.3ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.8ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (0.1ms)[0m  SHOW TIME ZONE
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.6ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2010-08-12 22:33:10 +1000
+  Processing by Users::SessionsController#new as HTML
+Rendered devise/shared/_links.haml (4.7ms)
+Rendered layouts/_analytics.html.erb (0.6ms)
+Rendered users/sessions/new.html.erb within layouts/admin (15.1ms)
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 4.9ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2010-08-12 22:33:10 +1000
+  Processing by Users::SessionsController#create as HTML
+  Parameters: {"_snowman"=>"☃", "user"=>{"email"=>"plattsmw@gmail.com}", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mSQL (1.7ms)[0m  [1m SELECT tablename
+ FROM pg_tables
+ WHERE schemaname = ANY (current_schemas(false))
+[0m
+  [1m[35mSQL (0.8ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mUser Load (1.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."email" = 'plattsmw@gmail.com}') LIMIT 1[0m
+Completed   in 235ms
+  Processing by Users::SessionsController#new as HTML
+  Parameters: {"_snowman"=>"☃", "user"=>{"email"=>"plattsmw@gmail.com}", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+Rendered devise/shared/_links.haml (0.8ms)
+Rendered layouts/_analytics.html.erb (0.0ms)
+Rendered users/sessions/new.html.erb within layouts/admin (6.0ms)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 3.6ms)
+  [1m[35mSQL (0.5ms)[0m  ROLLBACK
+  [1m[36mSQL (0.2ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.1ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.3ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (0.1ms)[0m  SHOW TIME ZONE
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.6ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2010-08-12 22:34:20 +1000
+  Processing by Users::SessionsController#new as HTML
+Rendered devise/shared/_links.haml (3.1ms)
+Rendered layouts/_analytics.html.erb (0.3ms)
+Rendered users/sessions/new.html.erb within layouts/admin (10.0ms)
+Completed 200 OK in 13ms (Views: 12.8ms | ActiveRecord: 3.6ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2010-08-12 22:34:20 +1000
+  Processing by Users::SessionsController#create as HTML
+  Parameters: {"_snowman"=>"☃", "user"=>{"email"=>"plattsmw@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mSQL (1.9ms)[0m  [1m SELECT tablename
+ FROM pg_tables
+ WHERE schemaname = ANY (current_schemas(false))
+[0m
+  [1m[35mSQL (1.1ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."email" = 'plattsmw@gmail.com') LIMIT 1[0m
+Completed   in 178ms
+  Processing by Users::SessionsController#new as HTML
+  Parameters: {"_snowman"=>"☃", "user"=>{"email"=>"plattsmw@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+Rendered devise/shared/_links.haml (0.8ms)
+Rendered layouts/_analytics.html.erb (0.1ms)
+Rendered users/sessions/new.html.erb within layouts/admin (46.7ms)
+Completed 200 OK in 48ms (Views: 47.5ms | ActiveRecord: 3.8ms)
+  [1m[35mSQL (0.4ms)[0m  ROLLBACK
+  [1m[36mSQL (0.2ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.1ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.3ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (0.1ms)[0m  SHOW TIME ZONE
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (3.2ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2010-08-12 22:35:08 +1000
+  Processing by Users::SessionsController#new as HTML
+Rendered devise/shared/_links.haml (4.2ms)
+Rendered layouts/_analytics.html.erb (0.3ms)
+Rendered users/sessions/new.html.erb within layouts/admin (17.0ms)
+Completed 200 OK in 22ms (Views: 20.9ms | ActiveRecord: 4.1ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2010-08-12 22:35:09 +1000
+  Processing by Users::SessionsController#create as HTML
+  Parameters: {"_snowman"=>"☃", "user"=>{"email"=>"bodie@dovetailtimbers.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mSQL (1.6ms)[0m  [1m SELECT tablename
+ FROM pg_tables
+ WHERE schemaname = ANY (current_schemas(false))
+[0m
+  [1m[35mSQL (0.6ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."email" = 'bodie@dovetailtimbers.com') LIMIT 1[0m
+Completed   in 187ms
+  Processing by Users::SessionsController#new as HTML
+  Parameters: {"_snowman"=>"☃", "user"=>{"email"=>"bodie@dovetailtimbers.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+Rendered devise/shared/_links.haml (0.6ms)
+Rendered layouts/_analytics.html.erb (0.0ms)
+Rendered users/sessions/new.html.erb within layouts/admin (4.6ms)
+Completed 200 OK in 5ms (Views: 5.3ms | ActiveRecord: 3.1ms)
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.6ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.2ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.1ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.6ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (0.1ms)[0m  SHOW TIME ZONE
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (4.1ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2010-08-12 22:48:28 +1000
+  Processing by Users::SessionsController#new as HTML
+Rendered devise/shared/_links.haml (3.5ms)
+Rendered layouts/_analytics.html.erb (0.3ms)
+Rendered users/sessions/new.html.erb within layouts/admin (10.5ms)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 5.9ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2010-08-12 22:48:29 +1000
+  Processing by Users::SessionsController#create as HTML
+  Parameters: {"_snowman"=>"☃", "user"=>{"email"=>"plattsmw@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mSQL (1.7ms)[0m  [1m SELECT tablename
+ FROM pg_tables
+ WHERE schemaname = ANY (current_schemas(false))
+[0m
+  [1m[35mSQL (0.7ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."email" = 'plattsmw@gmail.com') LIMIT 1[0m
+Completed   in 196ms
+  Processing by Users::SessionsController#new as HTML
+  Parameters: {"_snowman"=>"☃", "user"=>{"email"=>"plattsmw@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+Rendered devise/shared/_links.haml (0.7ms)
+Rendered layouts/_analytics.html.erb (0.0ms)
+Rendered users/sessions/new.html.erb within layouts/admin (5.0ms)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 3.3ms)
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.8ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.5ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.4ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.3ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (1.0ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (0.2ms)[0m  SHOW TIME ZONE
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (10.3ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[36mSQL (0.2ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.1ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.4ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (0.1ms)[0m  SHOW TIME ZONE
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.2ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mSQL (0.2ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.1ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.3ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (0.1ms)[0m  SHOW TIME ZONE
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.3ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2010-08-13 15:46:39 +1000
+  Processing by Users::SessionsController#new as HTML
+Rendered devise/shared/_links.haml (2.7ms)
+Rendered layouts/_analytics.html.erb (0.4ms)
+Rendered users/sessions/new.html.erb within layouts/admin (10.6ms)
+Completed 200 OK in 13ms (Views: 12.9ms | ActiveRecord: 3.2ms)
+  [1m[36mSQL (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.4ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.3ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.2ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.4ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW TIME ZONE
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.6ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2010-08-13 15:47:23 +1000
+  Processing by Users::SessionsController#new as HTML
+Rendered devise/shared/_links.haml (3.3ms)
+Rendered layouts/_analytics.html.erb (0.3ms)
+Rendered users/sessions/new.html.erb within layouts/admin (10.6ms)
+Completed 200 OK in 13ms (Views: 12.8ms | ActiveRecord: 4.8ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2010-08-13 15:47:23 +1000
+  Processing by Users::SessionsController#create as HTML
+  Parameters: {"_snowman"=>"☃", "user"=>{"email"=>"plattsmw@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mSQL (3.4ms)[0m  [1m SELECT tablename
+ FROM pg_tables
+ WHERE schemaname = ANY (current_schemas(false))
+[0m
+  [1m[35mSQL (0.6ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mUser Load (1.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."email" = 'plattsmw@gmail.com') LIMIT 1[0m
+Completed   in 195ms
+  Processing by Users::SessionsController#new as HTML
+  Parameters: {"_snowman"=>"☃", "user"=>{"email"=>"plattsmw@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+Rendered devise/shared/_links.haml (0.6ms)
+Rendered layouts/_analytics.html.erb (0.0ms)
+Rendered users/sessions/new.html.erb within layouts/admin (4.7ms)
+Completed 200 OK in 5ms (Views: 5.2ms | ActiveRecord: 5.3ms)
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.1ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.7ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (0.1ms)[0m  SHOW TIME ZONE
+  [1m[36mSQL (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (11.4ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2010-08-13 16:00:03 +1000
+  Processing by Users::SessionsController#new as HTML
+Rendered devise/shared/_links.haml (4.3ms)
+Rendered layouts/_analytics.html.erb (0.4ms)
+Rendered users/sessions/new.html.erb within layouts/admin (14.0ms)
+Completed 200 OK in 19ms (Views: 18.4ms | ActiveRecord: 13.6ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2010-08-13 16:00:03 +1000
+  Processing by Users::SessionsController#create as HTML
+  Parameters: {"_snowman"=>"☃", "user"=>{"email"=>"plattsmw@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mSQL (3.3ms)[0m  [1m SELECT tablename
+ FROM pg_tables
+ WHERE schemaname = ANY (current_schemas(false))
+[0m
+  [1m[35mSQL (1.1ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mUser Load (1.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."email" = 'plattsmw@gmail.com') LIMIT 1[0m
+Completed   in 224ms
+  Processing by Users::SessionsController#new as HTML
+  Parameters: {"_snowman"=>"☃", "user"=>{"email"=>"plattsmw@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+Rendered devise/shared/_links.haml (0.9ms)
+Rendered layouts/_analytics.html.erb (0.1ms)
+Rendered users/sessions/new.html.erb within layouts/admin (49.0ms)
+Completed 200 OK in 50ms (Views: 49.9ms | ActiveRecord: 6.0ms)
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.1ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.4ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (0.1ms)[0m  SHOW TIME ZONE
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (3.3ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2010-08-13 16:01:33 +1000
+  Processing by Users::SessionsController#new as HTML
+ERROR: compiling _app_views_users_sessions_new_html_erb___2671252676812557702_31543920__726021716425017177 RAISED /home/mplatts/Documents/websites/dove_tail/app/views/users/sessions/new.html.erb:5: syntax error, unexpected keyword_end
+');@output_buffer.append= ( end );@output_buffer.safe_concat('
+                               ^
+/home/mplatts/Documents/websites/dove_tail/app/views/users/sessions/new.html.erb:20: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+... devise_mapping.rememberable? );@output_buffer.safe_concat('
+...                               ^
+/home/mplatts/Documents/websites/dove_tail/app/views/users/sessions/new.html.erb:25: syntax error, unexpected keyword_end
+  ');@output_buffer.append= ( end );@output_buffer.safe_concat('  <p>
+                                 ^
+/home/mplatts/Documents/websites/dove_tail/app/views/users/sessions/new.html.erb:28: syntax error, unexpected keyword_end
+...');@output_buffer.append= ( end );@output_buffer.append= ( r...
+...                               ^
+/home/mplatts/Documents/websites/dove_tail/app/views/users/sessions/new.html.erb:30: syntax error, unexpected keyword_ensure, expecting ')'
+/home/mplatts/Documents/websites/dove_tail/app/views/users/sessions/new.html.erb:32: syntax error, unexpected keyword_end, expecting ')'
+Function body:           def _app_views_users_sessions_new_html_erb___2671252676812557702_31543920__726021716425017177(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "users/sessions/new";_old_output_buffer = @output_buffer;;@output_buffer = ActionView::OutputBuffer.new;@output_buffer.append=  content_for :nav do @output_buffer.safe_concat('
+');@output_buffer.safe_concat('  <ul class="nav">
+    <li>');@output_buffer.append= ( link_to "Back", root_url );@output_buffer.safe_concat('</li>
+  </ul>
+');@output_buffer.append= ( end );@output_buffer.safe_concat('
+<h2> Sign in </h2>
+
+');@output_buffer.append=  form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| @output_buffer.safe_concat('
+');@output_buffer.safe_concat('  <p>
+     ');@output_buffer.append= ( f.label :email );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('     <br />
+     ');@output_buffer.append= (  f.text_field :email );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  </p>
+  <p>
+    ');@output_buffer.append= ( f.label :password );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('    <br />
+    ');@output_buffer.append= ( f.password_field :password );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  </p> 
+   
+  ');@output_buffer.append= ( if devise_mapping.rememberable? );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('    <p>
+        ');@output_buffer.append= ( f.check_box :remember_me );@output_buffer.safe_concat('      
+');@output_buffer.safe_concat('        ');@output_buffer.append= ( f.label :remember_me );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('    </p>
+  ');@output_buffer.append= ( end );@output_buffer.safe_concat('  <p>
+    ');@output_buffer.append= ( f.submit "Sign in" );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  </p>
+');@output_buffer.append= ( end );@output_buffer.append= ( render :partial => "devise/shared/links" );@output_buffer.safe_concat('
+');@output_buffer.to_s
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_view/template.rb:255:in `module_eval'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_view/template.rb:255:in `compile'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_view/template.rb:134:in `block in render'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/activesupport/lib/active_support/notifications.rb:52:in `block in instrument'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/activesupport/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/activesupport/lib/active_support/notifications.rb:52:in `instrument'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_view/template.rb:127:in `render'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_view/render/rendering.rb:59:in `block in _render_template'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/activesupport/lib/active_support/notifications.rb:52:in `block in instrument'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/activesupport/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/activesupport/lib/active_support/notifications.rb:52:in `instrument'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_view/render/rendering.rb:56:in `_render_template'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_view/render/rendering.rb:26:in `render'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/haml-3.0.15/lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/abstract_controller/rendering.rb:114:in `_render_template'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/abstract_controller/rendering.rb:108:in `render_to_body'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/abstract_controller/rendering.rb:101:in `render_to_string'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/abstract_controller/rendering.rb:92:in `render'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_controller/metal/rendering.rb:17:in `render'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/activesupport/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/home/mplatts/.rvm/rubies/ruby-1.9.2-rc1/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/activesupport/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/activerecord/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/abstract_controller/base.rb:148:in `process_action'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/activesupport/lib/active_support/callbacks.rb:440:in `_run__4095948792611578191__process_action__1204738873530777990__callbacks'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/activesupport/lib/active_support/callbacks.rb:404:in `_run_process_action_callbacks'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/activesupport/lib/active_support/callbacks.rb:93:in `run_callbacks'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/activesupport/lib/active_support/notifications.rb:52:in `block in instrument'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/activesupport/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/activesupport/lib/active_support/notifications.rb:52:in `instrument'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/cucumber-rails-0.3.2/lib/cucumber/rails/action_controller.rb:13:in `process_action'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/abstract_controller/base.rb:117:in `process'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/abstract_controller/rendering.rb:40:in `process'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_controller/metal.rb:133:in `dispatch'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_controller/metal.rb:173:in `block in action'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/routing/mapper.rb:33:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/rack-mount-0.6.9/lib/rack/mount/route_set.rb:148:in `block in call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/rack-mount-0.6.9/lib/rack/mount/code_generation.rb:89:in `block in recognize'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/rack-mount-0.6.9/lib/rack/mount/code_generation.rb:66:in `optimized_each'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/rack-mount-0.6.9/lib/rack/mount/code_generation.rb:88:in `recognize'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/rack-mount-0.6.9/lib/rack/mount/route_set.rb:139:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/routing/route_set.rb:492:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/haml-3.0.15/lib/sass/plugin/rack.rb:41:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/warden-0.10.7/lib/warden/manager.rb:35:in `block in call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/warden-0.10.7/lib/warden/manager.rb:34:in `catch'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/warden-0.10.7/lib/warden/manager.rb:34:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/middleware/best_standards_support.rb:8:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/middleware/head.rb:14:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/rack-1.2.1/lib/rack/methodoverride.rb:24:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/middleware/flash.rb:177:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/middleware/cookies.rb:268:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/activerecord/lib/active_record/query_cache.rb:32:in `block in call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/activerecord/lib/active_record/query_cache.rb:12:in `cache'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/activerecord/lib/active_record/query_cache.rb:31:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/activesupport/lib/active_support/callbacks.rb:410:in `_run_call_callbacks'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/rack-1.2.1/lib/rack/sendfile.rb:107:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/railties/lib/rails/rack/logger.rb:13:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/rack-1.2.1/lib/rack/runtime.rb:17:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/activesupport/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/rack-1.2.1/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:10:in `synchronize'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/actionpack/lib/action_dispatch/middleware/static.rb:30:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bundler/gems/rails-d62700f/railties/lib/rails/application.rb:168:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/rack-1.2.1/lib/rack/urlmap.rb:47:in `block in call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/rack-1.2.1/lib/rack/urlmap.rb:41:in `each'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/rack-1.2.1/lib/rack/urlmap.rb:41:in `call'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/rack-test-0.5.4/lib/rack/mock_session.rb:30:in `request'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/rack-test-0.5.4/lib/rack/test.rb:207:in `process_request'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/rack-test-0.5.4/lib/rack/test.rb:57:in `get'
+/home/mplatts/.rvm/rubies/ruby-1.9.2-rc1/lib/ruby/1.9.1/forwardable.rb:182:in `get'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/capybara-0.3.9/lib/capybara/driver/rack_test_driver.rb:242:in `get'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/capybara-0.3.9/lib/capybara/driver/rack_test_driver.rb:203:in `process'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/capybara-0.3.9/lib/capybara/driver/rack_test_driver.rb:198:in `visit'
+/home/mplatts/.rvm/rubies/ruby-1.9.2-rc1/lib/ruby/1.9.1/forwardable.rb:182:in `visit'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/capybara-0.3.9/lib/capybara/dsl.rb:55:in `visit'
+/home/mplatts/Documents/websites/dove_tail/features/step_definitions/web_steps.rb:24:in `block in <top (required)>'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/cucumber-0.8.5/lib/cucumber/core_ext/instance_exec.rb:48:in `instance_exec'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/cucumber-0.8.5/lib/cucumber/core_ext/instance_exec.rb:48:in `block in cucumber_instance_exec'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/cucumber-0.8.5/lib/cucumber/core_ext/instance_exec.rb:69:in `cucumber_run_with_backtrace_filtering'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/cucumber-0.8.5/lib/cucumber/core_ext/instance_exec.rb:36:in `cucumber_instance_exec'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/cucumber-0.8.5/lib/cucumber/rb_support/rb_step_definition.rb:54:in `invoke'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/cucumber-0.8.5/lib/cucumber/step_match.rb:26:in `invoke'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/cucumber-0.8.5/lib/cucumber/step_mother.rb:203:in `invoke'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/cucumber-0.8.5/lib/cucumber/rb_support/rb_world.rb:22:in `__cucumber_invoke'
+/home/mplatts/Documents/websites/dove_tail/features/step_definitions/admin_steps.rb:5:in `block in <top (required)>'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/cucumber-0.8.5/lib/cucumber/core_ext/instance_exec.rb:48:in `instance_exec'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/cucumber-0.8.5/lib/cucumber/core_ext/instance_exec.rb:48:in `block in cucumber_instance_exec'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/cucumber-0.8.5/lib/cucumber/core_ext/instance_exec.rb:69:in `cucumber_run_with_backtrace_filtering'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/cucumber-0.8.5/lib/cucumber/core_ext/instance_exec.rb:36:in `cucumber_instance_exec'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/cucumber-0.8.5/lib/cucumber/rb_support/rb_step_definition.rb:54:in `invoke'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/cucumber-0.8.5/lib/cucumber/step_match.rb:26:in `invoke'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/cucumber-0.8.5/lib/cucumber/ast/step_invocation.rb:62:in `invoke'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/cucumber-0.8.5/lib/cucumber/ast/step_invocation.rb:41:in `accept'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/cucumber-0.8.5/lib/cucumber/ast/tree_walker.rb:99:in `block in visit_step'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/cucumber-0.8.5/lib/cucumber/ast/tree_walker.rb:164:in `broadcast'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/cucumber-0.8.5/lib/cucumber/ast/tree_walker.rb:98:in `visit_step'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/cucumber-0.8.5/lib/cucumber/ast/step_collection.rb:15:in `block in accept'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/cucumber-0.8.5/lib/cucumber/ast/step_collection.rb:14:in `each'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/cucumber-0.8.5/lib/cucumber/ast/step_collection.rb:14:in `accept'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/cucumber-0.8.5/lib/cucumber/ast/tree_walker.rb:93:in `block in visit_steps'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/cucumber-0.8.5/lib/cucumber/ast/tree_walker.rb:164:in `broadcast'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/cucumber-0.8.5/lib/cucumber/ast/tree_walker.rb:92:in `visit_steps'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/cucumber-0.8.5/lib/cucumber/ast/background.rb:38:in `block in accept'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/cucumber-0.8.5/lib/cucumber/ast/background.rb:48:in `block in with_visitor'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/cucumber-0.8.5/lib/cucumber/ast/scenario.rb:106:in `with_visitor'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/cucumber-0.8.5/lib/cucumber/ast/background.rb:47:in `with_visitor'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/cucumber-0.8.5/lib/cucumber/ast/background.rb:36:in `accept'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/cucumber-0.8.5/lib/cucumber/ast/tree_walker.rb:57:in `block in visit_background'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/cucumber-0.8.5/lib/cucumber/ast/tree_walker.rb:164:in `broadcast'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/cucumber-0.8.5/lib/cucumber/ast/tree_walker.rb:56:in `visit_background'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/cucumber-0.8.5/lib/cucumber/ast/feature.rb:33:in `accept'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/cucumber-0.8.5/lib/cucumber/ast/tree_walker.rb:20:in `block in visit_feature'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/cucumber-0.8.5/lib/cucumber/ast/tree_walker.rb:164:in `broadcast'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/cucumber-0.8.5/lib/cucumber/ast/tree_walker.rb:19:in `visit_feature'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/cucumber-0.8.5/lib/cucumber/ast/features.rb:29:in `block in accept'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/cucumber-0.8.5/lib/cucumber/ast/features.rb:17:in `each'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/cucumber-0.8.5/lib/cucumber/ast/features.rb:17:in `each'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/cucumber-0.8.5/lib/cucumber/ast/features.rb:28:in `accept'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/cucumber-0.8.5/lib/cucumber/ast/tree_walker.rb:14:in `block in visit_features'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/cucumber-0.8.5/lib/cucumber/ast/tree_walker.rb:164:in `broadcast'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/cucumber-0.8.5/lib/cucumber/ast/tree_walker.rb:13:in `visit_features'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/cucumber-0.8.5/lib/cucumber/cli/main.rb:61:in `execute!'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/cucumber-0.8.5/lib/cucumber/cli/main.rb:25:in `execute'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/gems/cucumber-0.8.5/bin/cucumber:8:in `<top (required)>'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bin/cucumber:19:in `load'
+/home/mplatts/.rvm/gems/ruby-1.9.2-rc1/bin/cucumber:19:in `<main>'
+Rendered users/sessions/new.html.erb within layouts/admin (2.7ms)
+Completed   in 6ms
+  [1m[36mSQL (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mSQL (0.2ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.1ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.3ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (0.1ms)[0m  SHOW TIME ZONE
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (3.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2010-08-13 16:02:15 +1000
+  Processing by Users::SessionsController#new as HTML
+Rendered devise/shared/_links.haml (28.2ms)
+Rendered layouts/_analytics.html.erb (0.3ms)
+Rendered users/sessions/new.html.erb within layouts/admin (37.7ms)
+Completed 200 OK in 40ms (Views: 39.9ms | ActiveRecord: 4.8ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2010-08-13 16:02:16 +1000
+  Processing by Users::SessionsController#create as HTML
+  Parameters: {"_snowman"=>"☃", "user"=>{"email"=>"plattsmw@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mSQL (2.2ms)[0m  [1m SELECT tablename
+ FROM pg_tables
+ WHERE schemaname = ANY (current_schemas(false))
+[0m
+  [1m[35mSQL (0.7ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mUser Load (1.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."email" = 'plattsmw@gmail.com') LIMIT 1[0m
+Completed   in 268ms
+  Processing by Users::SessionsController#new as HTML
+  Parameters: {"_snowman"=>"☃", "user"=>{"email"=>"plattsmw@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+Rendered devise/shared/_links.haml (0.6ms)
+Rendered layouts/_analytics.html.erb (0.0ms)
+Rendered users/sessions/new.html.erb within layouts/admin (5.0ms)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 3.9ms)
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.2ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.1ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.3ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (0.1ms)[0m  SHOW TIME ZONE
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.2ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.4ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.4ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.4ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (0.1ms)[0m  SHOW TIME ZONE
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2010-08-13 16:05:18 +1000
+  Processing by Users::SessionsController#new as HTML
+Rendered devise/shared/_links.haml (36.2ms)
+Rendered layouts/_analytics.html.erb (0.3ms)
+Rendered users/sessions/new.html.erb within layouts/admin (45.0ms)
+Completed 200 OK in 48ms (Views: 47.3ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2010-08-13 16:05:18 +1000
+  Processing by Users::SessionsController#create as HTML
+  Parameters: {"_snowman"=>"☃", "user"=>{"email"=>"bodie@dovetailtimbers.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mSQL (2.6ms)[0m   SELECT tablename
+ FROM pg_tables
+ WHERE schemaname = ANY (current_schemas(false))
+  [1m[36mSQL (1.6ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."email" = 'bodie@dovetailtimbers.com') LIMIT 1
+Completed   in 163ms
+  Processing by Users::SessionsController#new as HTML
+  Parameters: {"_snowman"=>"☃", "user"=>{"email"=>"bodie@dovetailtimbers.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+Rendered devise/shared/_links.haml (0.7ms)
+Rendered layouts/_analytics.html.erb (0.0ms)
+Rendered users/sessions/new.html.erb within layouts/admin (4.7ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 5.1ms)
+  [1m[36mSQL (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.7ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.1ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.4ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (0.1ms)[0m  SHOW TIME ZONE
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (3.3ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2010-08-13 16:10:49 +1000
+  Processing by Users::SessionsController#new as HTML
+Rendered devise/shared/_links.haml (2.8ms)
+Rendered layouts/_analytics.html.erb (0.3ms)
+Rendered users/sessions/new.html.erb within layouts/admin (9.8ms)
+Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 5.1ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2010-08-13 16:10:49 +1000
+  Processing by Users::SessionsController#create as HTML
+  Parameters: {"_snowman"=>"☃", "user"=>{"email"=>"plattsmw@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mSQL (2.5ms)[0m  [1m SELECT tablename
+ FROM pg_tables
+ WHERE schemaname = ANY (current_schemas(false))
+[0m
+  [1m[35mSQL (0.6ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."email" = 'plattsmw@gmail.com') LIMIT 1[0m
+Completed   in 190ms
+  Processing by Users::SessionsController#new as HTML
+  Parameters: {"_snowman"=>"☃", "user"=>{"email"=>"plattsmw@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+Rendered devise/shared/_links.haml (0.7ms)
+Rendered layouts/_analytics.html.erb (0.1ms)
+Rendered users/sessions/new.html.erb within layouts/admin (39.7ms)
+Completed 200 OK in 41ms (Views: 40.5ms | ActiveRecord: 4.1ms)
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.1ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.4ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (0.1ms)[0m  SHOW TIME ZONE
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.7ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2010-08-13 16:11:36 +1000
+  Processing by Users::SessionsController#new as HTML
+Rendered devise/shared/_links.haml (2.7ms)
+Rendered layouts/_analytics.html.erb (0.3ms)
+Rendered users/sessions/new.html.erb within layouts/admin (10.2ms)
+Completed 200 OK in 13ms (Views: 12.6ms | ActiveRecord: 3.8ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2010-08-13 16:11:36 +1000
+  Processing by Users::SessionsController#create as HTML
+  Parameters: {"_snowman"=>"☃", "user"=>{"email"=>"plattsmw@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mSQL (1.5ms)[0m  [1m SELECT tablename
+ FROM pg_tables
+ WHERE schemaname = ANY (current_schemas(false))
+[0m
+  [1m[35mSQL (0.6ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."email" = 'plattsmw@gmail.com') LIMIT 1[0m
+Completed   in 163ms
+  Processing by Users::SessionsController#new as HTML
+  Parameters: {"_snowman"=>"☃", "user"=>{"email"=>"plattsmw@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+Rendered devise/shared/_links.haml (0.6ms)
+Rendered layouts/_analytics.html.erb (0.1ms)
+Rendered users/sessions/new.html.erb within layouts/admin (38.7ms)
+Completed 200 OK in 40ms (Views: 39.4ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2010-08-13 16:11:36 +1000
+  Processing by AdminController#index as HTML
+Completed   in 1ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2010-08-13 16:11:36 +1000
+  Processing by Users::SessionsController#new as HTML
+Rendered devise/shared/_links.haml (0.6ms)
+Rendered layouts/_analytics.html.erb (0.0ms)
+Rendered users/sessions/new.html.erb within layouts/admin (4.1ms)
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.2ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.1ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.4ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (0.1ms)[0m  SHOW TIME ZONE
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.3ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2010-08-13 16:13:15 +1000
+  Processing by Users::SessionsController#new as HTML
+Rendered devise/shared/_links.haml (2.6ms)
+Rendered layouts/_analytics.html.erb (0.3ms)
+Rendered users/sessions/new.html.erb within layouts/admin (9.7ms)
+Completed 200 OK in 12ms (Views: 11.9ms | ActiveRecord: 3.3ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2010-08-13 16:13:15 +1000
+  Processing by Users::SessionsController#create as HTML
+  Parameters: {"_snowman"=>"☃", "user"=>{"email"=>"plattsmw@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mSQL (1.6ms)[0m  [1m SELECT tablename
+ FROM pg_tables
+ WHERE schemaname = ANY (current_schemas(false))
+[0m
+  [1m[35mSQL (0.7ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."email" = 'plattsmw@gmail.com') LIMIT 1[0m
+Completed   in 209ms
+  Processing by Users::SessionsController#new as HTML
+  Parameters: {"_snowman"=>"☃", "user"=>{"email"=>"plattsmw@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+Rendered devise/shared/_links.haml (0.9ms)
+Rendered layouts/_analytics.html.erb (0.0ms)
+Rendered users/sessions/new.html.erb within layouts/admin (5.1ms)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2010-08-13 16:13:15 +1000
+  Processing by AdminController#index as HTML
+Completed   in 1ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2010-08-13 16:13:15 +1000
+  Processing by Users::SessionsController#new as HTML
+Rendered devise/shared/_links.haml (0.6ms)
+Rendered layouts/_analytics.html.erb (0.0ms)
+Rendered users/sessions/new.html.erb within layouts/admin (4.4ms)
+Completed 200 OK in 5ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+  [1m[35mSQL (0.3ms)[0m  ROLLBACK
+  [1m[36mSQL (0.2ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.1ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.4ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (0.1ms)[0m  SHOW TIME ZONE
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.4ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2010-08-13 16:14:16 +1000
+  Processing by Users::SessionsController#new as HTML
+Rendered devise/shared/_links.haml (2.7ms)
+Rendered layouts/_analytics.html.erb (0.3ms)
+Rendered users/sessions/new.html.erb within layouts/admin (9.8ms)
+Completed 200 OK in 12ms (Views: 11.9ms | ActiveRecord: 3.4ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2010-08-13 16:14:16 +1000
+  Processing by Users::SessionsController#create as HTML
+  Parameters: {"_snowman"=>"☃", "user"=>{"email"=>"plattsmw@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mSQL (1.6ms)[0m  [1m SELECT tablename
+ FROM pg_tables
+ WHERE schemaname = ANY (current_schemas(false))
+[0m
+  [1m[35mSQL (0.5ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."email" = 'plattsmw@gmail.com') LIMIT 1[0m
+Completed   in 205ms
+  Processing by Users::SessionsController#new as HTML
+  Parameters: {"_snowman"=>"☃", "user"=>{"email"=>"plattsmw@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+Rendered devise/shared/_links.haml (0.6ms)
+Rendered layouts/_analytics.html.erb (0.0ms)
+Rendered users/sessions/new.html.erb within layouts/admin (4.3ms)
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2010-08-13 16:14:16 +1000
+  Processing by AdminController#index as HTML
+Completed   in 0ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2010-08-13 16:14:16 +1000
+  Processing by Users::SessionsController#new as HTML
+Rendered devise/shared/_links.haml (0.7ms)
+Rendered layouts/_analytics.html.erb (0.0ms)
+Rendered users/sessions/new.html.erb within layouts/admin (4.3ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.5ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.4ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.9ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (0.1ms)[0m  SHOW TIME ZONE
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (4.0ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2010-08-13 16:22:43 +1000
+  Processing by Users::SessionsController#new as HTML
+Rendered devise/shared/_links.haml (2.9ms)
+Rendered layouts/_analytics.html.erb (0.4ms)
+Rendered users/sessions/new.html.erb within layouts/admin (12.2ms)
+Completed 200 OK in 15ms (Views: 14.9ms | ActiveRecord: 6.4ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2010-08-13 16:22:43 +1000
+  Processing by Users::SessionsController#create as HTML
+  Parameters: {"_snowman"=>"☃", "user"=>{"email"=>"plattsmw@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mSQL (2.5ms)[0m  [1m SELECT tablename
+ FROM pg_tables
+ WHERE schemaname = ANY (current_schemas(false))
+[0m
+  [1m[35mSQL (0.6ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mUser Load (2.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."email" = 'plattsmw@gmail.com') LIMIT 1[0m
+Completed   in 246ms
+  Processing by Users::SessionsController#new as HTML
+  Parameters: {"_snowman"=>"☃", "user"=>{"email"=>"plattsmw@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+Rendered devise/shared/_links.haml (0.6ms)
+Rendered layouts/_analytics.html.erb (0.0ms)
+Rendered users/sessions/new.html.erb within layouts/admin (5.1ms)
+Completed 200 OK in 6ms (Views: 6.2ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2010-08-13 16:22:43 +1000
+  Processing by AdminController#index as HTML
+Completed   in 1ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2010-08-13 16:22:43 +1000
+  Processing by Users::SessionsController#new as HTML
+Rendered devise/shared/_links.haml (0.6ms)
+Rendered layouts/_analytics.html.erb (0.0ms)
+Rendered users/sessions/new.html.erb within layouts/admin (4.8ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+  [1m[35mSQL (0.7ms)[0m  ROLLBACK
+  [1m[36mSQL (0.2ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.2ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.1ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.4ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (0.1ms)[0m  SHOW TIME ZONE
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.7ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2010-08-13 16:28:24 +1000
+  Processing by Users::SessionsController#new as HTML
+Rendered devise/shared/_links.haml (2.7ms)
+Rendered layouts/_analytics.html.erb (0.3ms)
+Rendered users/sessions/new.html.erb within layouts/admin (10.0ms)
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 4.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2010-08-13 16:28:24 +1000
+  Processing by Users::SessionsController#create as HTML
+  Parameters: {"_snowman"=>"☃", "user"=>{"email"=>"plattsmw@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mSQL (2.1ms)[0m  [1m SELECT tablename
+ FROM pg_tables
+ WHERE schemaname = ANY (current_schemas(false))
+[0m
+  [1m[35mSQL (0.8ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."email" = 'plattsmw@gmail.com') LIMIT 1[0m
+Completed   in 193ms
+  Processing by Users::SessionsController#new as HTML
+  Parameters: {"_snowman"=>"☃", "user"=>{"email"=>"plattsmw@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+Rendered devise/shared/_links.haml (0.6ms)
+Rendered layouts/_analytics.html.erb (0.0ms)
+Rendered users/sessions/new.html.erb within layouts/admin (4.5ms)
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2010-08-13 16:28:24 +1000
+  Processing by AdminController#index as HTML
+Completed   in 0ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2010-08-13 16:28:24 +1000
+  Processing by Users::SessionsController#new as HTML
+Rendered devise/shared/_links.haml (0.6ms)
+Rendered layouts/_analytics.html.erb (0.0ms)
+Rendered users/sessions/new.html.erb within layouts/admin (4.4ms)
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+  [1m[35mSQL (0.4ms)[0m  ROLLBACK
+  [1m[36mSQL (0.2ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.1ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.3ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (0.1ms)[0m  SHOW TIME ZONE
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (4.2ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (2.2ms)[0m   SELECT tablename
+ FROM pg_tables
+ WHERE schemaname = ANY (current_schemas(false))
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mUser Load (3.9ms)[0m  SELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('plattsmw@gmail.com')) LIMIT 1
+  [1m[36mPK and serial sequence (77.8ms)[0m  [1m SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"users"'::regclass
+[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "users" ("created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "password_salt", "remember_created_at", "remember_token", "reset_password_token", "sign_in_count", "updated_at") VALUES ('2010-08-13 06:31:14.654714', NULL, NULL, 'plattsmw@gmail.com', '$2a$10$5eHIasfHzdRb7FB5ruzd3O2HdknblOA0mxES8.axeJr1yWpln1fue', NULL, NULL, '$2a$10$5eHIasfHzdRb7FB5ruzd3O', NULL, NULL, NULL, 0, '2010-08-13 06:31:14.654714') RETURNING "id"
+  [1m[36mSQL (0.4ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2010-08-13 16:31:14 +1000
+  Processing by Users::SessionsController#new as HTML
+Rendered devise/shared/_links.haml (3.7ms)
+Rendered layouts/_analytics.html.erb (0.3ms)
+Rendered users/sessions/new.html.erb within layouts/admin (11.6ms)
+Completed 200 OK in 15ms (Views: 14.6ms | ActiveRecord: 91.5ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2010-08-13 16:31:14 +1000
+  Processing by Users::SessionsController#create as HTML
+  Parameters: {"_snowman"=>"☃", "user"=>{"email"=>"plattsmw@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."email" = 'plattsmw@gmail.com') LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "current_sign_in_at" = '2010-08-13 06:31:15.095571', "current_sign_in_ip" = '127.0.0.1', "last_sign_in_at" = '2010-08-13 06:31:15.095571', "last_sign_in_ip" = '127.0.0.1', "sign_in_count" = 1, "updated_at" = '2010-08-13 06:31:15.096475' WHERE ("users"."id" = 4)
+  [1m[36mSQL (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/users
+Completed 302 Found in 210ms
+
+
+Started GET "/users" for 127.0.0.1 at 2010-08-13 16:31:15 +1000
+  Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 4) LIMIT 1
+Rendered layouts/_analytics.html.erb (0.0ms)
+Rendered admin/index.html.erb within layouts/admin (2.5ms)
+Completed 200 OK in 39ms (Views: 4.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2010-08-13 16:31:15 +1000
+  Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 4) LIMIT 1[0m
+Rendered layouts/_analytics.html.erb (0.0ms)
+Rendered admin/index.html.erb within layouts/admin (1.7ms)
+Completed 200 OK in 5ms (Views: 2.3ms | ActiveRecord: 0.4ms)
+  [1m[35mSQL (0.3ms)[0m  ROLLBACK

@@ -1,5 +1,4 @@
 Factory.define :user do |user|
-  user.name 'Bodie'
-  user.email 'bodie@dovetailtimbers.com'
-  user.password '12345'
+  user.email 'plattsmw@gmail.com'
+  user.password '123456'
 end
