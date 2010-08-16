@@ -9,3 +9,7 @@ Given /^I login as:$/ do |table|
   And %{I press "Sign in"}
 end
 
+When /^I create a new page with the following:$/ do |table|
+  # table is a Cucumber::Ast::Table
+  pending # express the regexp above with the code you wish you had
+end
