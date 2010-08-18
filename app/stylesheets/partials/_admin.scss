@@ -10,4 +10,13 @@ body.admin {
     font-size: 2em; }
   /* Classes */
   .padding {
-    padding: 2em 15px 0px 40px; } }
+    padding: 2em 15px 0px 40px; } 
+    
+  /* Flash */  
+  #errorExplanation       {border: solid 2px red;
+    p, li                 {color: red;}
+  }
+  #notice                 {border: solid 2px green; color: green;}
+  
+  .icon                   {margin-left: 10px;}
+}

@@ -1,0 +1,11 @@
+<% if target.errors.any? %>
+  <div class="padding" id="errorExplanation">
+    <h4>Try again Bodie...</h4>
+    <p><%= pluralize(target.errors.count, "error")%> prohibited this record from being saved:</p>
+    <ul>
+      <% target.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end -%>
+    </ul>
+  </div>
+<% end -%>

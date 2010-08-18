@@ -1,0 +1,28 @@
+<div class="span-8">
+  <% if @page.title.nil? %>
+    <h3>New Page</h3>
+  <% else %>
+    <h3>Edit <%= @page.title %></h3>
+  <% end -%>
+  
+  <div id="notice" style="display: none;"><%= flash[:notice] %></div>
+  <div id="alert" style="display: none;"><%= flash[:alert] %></div>
+  
+  <% form_for(@page, remote: true) do |f| -%>
+    <%= render "shared/error_messages", :target => @page %> 
+    <p><%= f.label :title %></p>
+      
+    <p><%= f.text_field :title %></p>
+    
+    <p><%= f.label :body %></p>
+    <p><%= f.text_area :body %></p>
+    
+      <%= f.submit(params[:id].blank? ? 'Create' : 'Edit') %>
+  <% end -%>
+</div>
+<div class="span-8">
+  <h3>Your Pages:</h3>
+  <ul id="pages"> 
+    <%= render :partial => 'page', :collection => @pages %>
+  </ul>
+</div>

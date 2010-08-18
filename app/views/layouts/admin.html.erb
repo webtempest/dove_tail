@@ -3,21 +3,22 @@
   <head>
     <title>Dove Tail Timbers<%= @title if @title %></title>
     <%= stylesheet_link_tag 'screen', media: 'screen, projection' %>
-    <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js", 'transitions.js', 'hoverIntent.js', 'superfish.js', 'application.js' %>
+    <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js", 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.4/jquery-ui.min.js', 'rails.js', 'transitions.js', 'hoverIntent.js', 'superfish.js', 'application.js' %>
     <%= csrf_meta_tag %>
   </head>
 
-  <body>
+  <body class="admin">
     <div class="container">
       <div id="header">
         <h1>Dove Tail Timbers</h1>
       </div>
       <div id="nav">
-        <%=yield :nav %>
+        <ul class="nav">
+          <li><%= link_to "Website", root_url %></li>
+          <li><%= link_to "Pages", controller: "pages" %></li>
+        </ul>
       </div>
       <div id="content" class="padding">
-        <%- if params[:notice] %><p class="notice"><%= notice %></p><% end %>
-        <%- if params[:alert] %><p class="alert"><%= alert %></p><% end %>
         <%= yield %>
       </div>
       <div id="footer">

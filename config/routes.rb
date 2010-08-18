@@ -1,12 +1,24 @@
 DoveTail::Application.routes.draw do 
  
+  get "pages/index"
+
+  get "pages/create"
+
+  get "pages/destroy"
+
   devise_for :users, :controllers => { :sessions => "users/sessions" }
   
   as :user do
     get "/sign_in" => "users/sessions#new"
     match "/users" => "admin#index", as: "user_root"
   end
+
+  resources :pages
   
+  as :page do
+    match '/pages' => 'pages#index', as: "pages_root"
+  end
+    
   match '/about' => 'home#about'
   match '/contact' => 'home#contact'
 

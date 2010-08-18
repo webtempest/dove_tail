@@ -11,10 +11,11 @@ Feature: Admin
     Then I should see "Welcome Bodie" within "h1"
     
   Scenario: User adds a new page
-    When I am on create page
+    Given I go to the pages_root page
+    And show me the page
     When I fill in the following:
-    |Title|Demo|
-    |Body|Lorum Ipsum|
+    |page_title|Demo|
+    |page_body|Lorum Ipsum|
     And I press "Create"
     Then I should see "Page created successfully"
     
