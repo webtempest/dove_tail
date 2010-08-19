@@ -4,7 +4,7 @@ class LinksController < ApplicationController
   respond_to :js, :html
 
   def index
-    @links = Link.order("position")
+    @links = Link.where(parent_id: nil).order("position")
     @link = Link.find(params[:id]) if params[:id]
     @link = Link.new if @link.nil?
     @pages = Page.all

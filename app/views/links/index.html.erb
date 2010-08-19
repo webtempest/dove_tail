@@ -18,7 +18,7 @@
     <p><%= f.collection_select( :page_id, @pages, :id, :title )  %></p>
     
     <p><%= f.label "If it's a submenu link it will sit under" %></p>
-    <p><%= f.collection_select( :id, @links, :id, :title )  %></p>
+    <p><%= f.collection_select( :parent_id, @links, :id, :title, {include_blank: "None"} )  %></p>
     
       <%= f.submit(params[:id].blank? ? 'Create' : 'Edit') %>
   <% end -%>

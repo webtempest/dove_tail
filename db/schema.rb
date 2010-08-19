@@ -10,13 +10,13 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100818232743) do
+ActiveRecord::Schema.define(:version => 20100819034704) do
 
   create_table "links", :force => true do |t|
     t.string   "title"
     t.integer  "page_id"
     t.integer  "position"
-    t.integer  "parent"
+    t.integer  "parent_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
