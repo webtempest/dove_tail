@@ -6,6 +6,10 @@ gem 'haml'
 gem 'compass'
 gem 'devise'
 
+# for menu system
+gem 'acts_as_tree'
+gem 'acts_as_list'
+
 # devise needs these if you are using HAML 10.8.10
 gem 'hpricot'
 gem 'ruby_parser'

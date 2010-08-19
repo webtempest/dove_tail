@@ -1534,20 +1534,24 @@ body.admin h1 {
 body.admin .padding {
   padding: 2em 15px 0px 40px;
 }
-/* line 16, ../../app/stylesheets/partials/_admin.scss */
+/* line 14, ../../app/stylesheets/partials/_admin.scss */
+body.admin .handle:hover {
+  cursor: move;
+}
+/* line 17, ../../app/stylesheets/partials/_admin.scss */
 body.admin #errorExplanation {
   border: solid 2px red;
 }
-/* line 17, ../../app/stylesheets/partials/_admin.scss */
-body.admin #errorExplanation p, body.admin #errorExplanation li {
+/* line 18, ../../app/stylesheets/partials/_admin.scss */
+body.admin #errorExplanation p, body.admin #errorExplanation li, body.admin #errorExplanation h4 {
   color: red;
 }
-/* line 19, ../../app/stylesheets/partials/_admin.scss */
+/* line 20, ../../app/stylesheets/partials/_admin.scss */
 body.admin #notice {
   border: solid 2px green;
   color: green;
 }
-/* line 21, ../../app/stylesheets/partials/_admin.scss */
+/* line 24, ../../app/stylesheets/partials/_admin.scss */
 body.admin .icon {
   margin-left: 10px;
 }

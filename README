@@ -15,3 +15,14 @@ Have done:
       user.email 'bodie@dovetailtimbers.com'
       user.password '12345'
     end
+    
+Menu Tutorial:
+# gemfile
+gem 'acts_as_tree'
+gem 'acts_as_list'
+
+$ rails g model link title:string page_id:integer position:integer parent:integer
+$ rake db:migrate
+$ rails g controller links index create update destroy
+
+

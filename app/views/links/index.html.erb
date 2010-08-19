@@ -1,0 +1,60 @@
+<div class="span-8">
+  <% if @link.title.nil? %>
+    <h3>New Menu Link</h3>
+  <% else %>
+    <h3>Edit <%= @link.title %></h3>
+  <% end -%>
+  
+  <div id="notice" style="display: none;"><%= flash[:notice] %></div>
+  <div id="alert" style="display: none;"><%= flash[:alert] %></div>
+  
+  <% form_for(@link, remote: true) do |f| -%>
+    <%= render "shared/error_messages", :target => @link %> 
+    <p><%= f.label :title %></p>
+      
+    <p><%= f.text_field :title %></p>
+    
+    <p><%= f.label :goes_to_page %></p>
+    <p><%= f.collection_select( :page_id, @pages, :id, :title )  %></p>
+    
+    <p><%= f.label "If it's a submenu link it will sit under" %></p>
+    <p><%= f.collection_select( :id, @links, :id, :title )  %></p>
+    
+      <%= f.submit(params[:id].blank? ? 'Create' : 'Edit') %>
+  <% end -%>
+</div>
+<div class="span-8">
+  <h3>Your Menu links:</h3>
+  <ul id="links"> 
+    <%= render :partial => 'link', :collection => @links %>
+  </ul>
+</div>
+
+
+<% content_for :javascript do %>
+  <%= javascript_tag do %>
+    // Sorting the list
+   
+    $(document).ready(function(){
+      $('#links').sortable({
+        axis: 'y',
+        dropOnEmpty: false,
+        handle: '.handle',
+        cursor: 'crosshair',
+        items: 'li',
+        opacity: 0.4,
+        scroll: true,
+        update: function(){
+          $.ajax({
+            type: 'post',
+            data: $('#links').sortable('serialize'),
+            dataType: 'script',
+            complete: function(request){
+              $('#links').effect('highlight');
+              },
+            url: '/links/sort'})
+          }
+        });
+      });
+  <% end %>
+<% end %>
