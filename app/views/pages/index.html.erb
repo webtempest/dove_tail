@@ -1,4 +1,10 @@
-<div class="span-8">
+<div class="span-24">
+  <h3>Your Pages:</h3>
+  <ul id="pages"> 
+    <%= render :partial => 'page', :collection => @pages %>
+  </ul>
+</div>
+<div class="span-24">
   <% if @page.title.nil? %>
     <h3>New Page</h3>
   <% else %>
@@ -8,21 +14,26 @@
   <div id="notice" style="display: none;"><%= flash[:notice] %></div>
   <div id="alert" style="display: none;"><%= flash[:alert] %></div>
   
-  <% form_for(@page, remote: true) do |f| -%>
+  <% form_for(@page) do |f| -%>
     <%= render "shared/error_messages", :target => @page %> 
     <p><%= f.label :title %></p>
       
     <p><%= f.text_field :title %></p>
     
     <p><%= f.label :body %></p>
-    <p><%= f.text_area :body %></p>
-    
-      <%= f.submit(params[:id].blank? ? 'Create' : 'Edit') %>
+    <p><%= f.cktext_area :body, :toolbar=>'Full', :width=>'850px', :height=>'400px' %></p>
+    <%= f.submit(params[:id].blank? ? 'Create' : 'Edit') %>
+      
   <% end -%>
 </div>
-<div class="span-8">
-  <h3>Your Pages:</h3>
-  <ul id="pages"> 
-    <%= render :partial => 'page', :collection => @pages %>
-  </ul>
-</div>
+
+
+<script type='text/javascript' charset='UTF-8'>
+  $(document).ready(function(){
+    $('form[data-remote]').bind("ajax:before", function(){
+      for (instance in CKEDITOR.instances){
+        CKEDITOR.instances[instance].updateElement();
+      }
+    });
+  });
+</script>

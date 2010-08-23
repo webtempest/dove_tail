@@ -2,6 +2,7 @@
   <% if @link.title.nil? %>
     <h3>New Menu Link</h3>
   <% else %>
+    <p><%= link_to "Create new", action: 'index' %></p>
     <h3>Edit <%= @link.title %></h3>
   <% end -%>
   
@@ -18,15 +19,19 @@
     <p><%= f.collection_select( :page_id, @pages, :id, :title )  %></p>
     
     <p><%= f.label "If it's a submenu link it will sit under" %></p>
-    <p><%= f.collection_select( :parent_id, @links, :id, :title, {include_blank: "None"} )  %></p>
-    
+    <% if params[:id].blank? %>
+      <p><%= f.collection_select(:parent_id, @root_links_with_root, :id, :title, {selected: @root.id} )  %></p>
+    <% else %>
+      <p><%= f.collection_select(:parent_id, @root_links_with_root, :id, :title )  %></p>
+    <% end -%>
       <%= f.submit(params[:id].blank? ? 'Create' : 'Edit') %>
   <% end -%>
 </div>
+
 <div class="span-8">
   <h3>Your Menu links:</h3>
   <ul id="links"> 
-    <%= render :partial => 'link', :collection => @links %>
+    <%= render :partial => 'link', :collection => @root_links_without_root, as: :link %>
   </ul>
 </div>
 

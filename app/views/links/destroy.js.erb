@@ -1,1 +1,1 @@
-$('#links').html("<%= escape_javascript(render :partial => 'link', collection: @links)%>")
+$('#links').html("<%= escape_javascript(render :partial => 'link', collection: @root_links_without_root, as: :link)%>")

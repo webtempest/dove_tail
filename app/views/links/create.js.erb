@@ -7,5 +7,5 @@
   $("#alert").hide(300);
   $("#notice").html("<%= escape_javascript(flash[:notice])%>");
   $("#notice").show(300).delay(600).hide(300);
-  $('#links').html("<%= escape_javascript(render partial: 'link', collection: @links) %></li>").effect('bounce');
+  $('#links').html("<%= escape_javascript(render partial: 'link', collection: @root_links_without_root, as: :link) %>").effect('bounce');
 <% end -%>

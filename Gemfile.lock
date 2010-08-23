@@ -1,4 +1,11 @@
 GIT
+  remote: git://github.com/galetahub/rails-ckeditor.git
+  revision: 409154a
+  branch: rails3
+  specs:
+    ckeditor (3.2.5)
+
+GIT
   remote: git://github.com/rails/rails.git
   revision: d62700f
   specs:
@@ -100,6 +107,9 @@ GEM
       treetop (>= 1.4.5)
     mime-types (1.16)
     nokogiri (1.4.3.1)
+    paperclip (2.3.3)
+      activerecord
+      activesupport
     pg (0.9.0)
     polyglot (0.3.1)
     rack (1.2.1)
@@ -149,6 +159,7 @@ DEPENDENCIES
   acts_as_tree
   autotest
   capybara
+  ckeditor!
   compass
   cucumber
   cucumber-rails
@@ -158,6 +169,7 @@ DEPENDENCIES
   haml
   hpricot
   launchy
+  paperclip
   pg
   rails!
   rspec-rails (>= 2.0.0.beta.1)

@@ -6,6 +6,10 @@ gem 'haml'
 gem 'compass'
 gem 'devise'
 
+gem 'paperclip'
+gem 'ckeditor', :git => 'git://github.com/galetahub/rails-ckeditor.git', :branch => 'rails3'
+
+
 # for menu system
 gem 'acts_as_tree'
 gem 'acts_as_list'

@@ -1,6 +1,6 @@
 <li id="link_<%= link.id %>">
   <span class="handle">[drag]</span>
-  <%= link_to link.title, action: "index", id: link %>
+  <%= link_to link.title, {action: "index", id: link} %>
   <%= link_to(image_tag("icons/cross.png", class: 'icon'), 
     {action: 'destroy', id: link}, 
     method: 'delete', 
