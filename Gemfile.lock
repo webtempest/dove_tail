@@ -49,6 +49,14 @@ GIT
       rake (>= 0.8.3)
       thor (~> 0.14.0)
 
+GIT
+  remote: http://github.com/Papipo/hassle.git
+  revision: 3a12feb
+  specs:
+    hassle (0.0.1)
+      haml
+      rack
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -167,6 +175,7 @@ DEPENDENCIES
   devise
   factory_girl_rails
   haml
+  hassle!
   hpricot
   launchy
   paperclip
