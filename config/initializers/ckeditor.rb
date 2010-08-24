@@ -48,7 +48,7 @@ if Object.const_defined?("Ckeditor")
     #config.file_manager_image_upload_uri = "/ckeditor/create/image"
    
     # Model's names witch processing in ckeditor_controller
-    #config.file_manager_image_model = "Ckeditor::Picture"
+    config.file_manager_image_model = "Ckeditor::Picture"
     #config.file_manager_file_model = "Ckeditor::AttachmentFile"
   end
 end

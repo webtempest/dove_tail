@@ -7,4 +7,4 @@
 #   Mayor.create(:name => 'Daley', :city => cities.first)
 
 bodie = User.create(email: "bodie@dovetailtimbers.com", password: "frisbee")
-root_link = Link.create(title: "root", parent_id: 0)
+root_link = Link.create(title: "root", parent_id: 0, page_id: 1)

@@ -66,6 +66,10 @@ GEM
     arel (0.4.0)
       activesupport (>= 3.0.0.beta)
     autotest (4.3.2)
+    aws-s3 (0.6.2)
+      builder
+      mime-types
+      xml-simple
     bcrypt-ruby (2.1.2)
     builder (2.1.2)
     capybara (0.3.9)
@@ -158,6 +162,7 @@ GEM
       nokogiri (>= 1.2.0)
       rack (>= 1.0)
       rack-test (>= 0.5.3)
+    xml-simple (1.0.12)
 
 PLATFORMS
   ruby
@@ -166,6 +171,7 @@ DEPENDENCIES
   acts_as_list
   acts_as_tree
   autotest
+  aws-s3
   capybara
   ckeditor!
   compass

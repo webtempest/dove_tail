@@ -1,9 +1,10 @@
 class Ckeditor::AttachmentFile < Ckeditor::Asset
   has_attached_file :data,
-                    :url => "/ckeditor_assets/attachments/:id/:filename",
-                    :path => ":rails_root/public/ckeditor_assets/attachments/:id/:filename"
+                    :s3_credentials => Rails.root.join("config", "s3.yml"), :bucket => "dovetailtimbers",
+                    :storage => :s3,
+                    :path => "/files/:id/:filename"
   
-  validates_attachment_size :data, :less_than=>100.megabytes
+  validates_attachment_size :data, :less_than => 10.megabytes
   
   def url(*args)
     if [:thumb, :content].include?(args.first)

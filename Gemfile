@@ -7,6 +7,7 @@ gem 'compass'
 gem 'devise'
 gem 'hassle', :git => 'http://github.com/Papipo/hassle.git'
 
+gem 'aws-s3'
 gem 'paperclip'
 gem 'ckeditor', :git => 'git://github.com/galetahub/rails-ckeditor.git', :branch => 'rails3'
 
