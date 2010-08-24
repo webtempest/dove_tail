@@ -6,6 +6,7 @@ DoveTail::Application.routes.draw do
   
   match '/about' => 'home#about'
   match '/contact' => 'home#contact'
+  match '/home/switch' => 'home#switch'
   
   devise_for :users, :controllers => { :sessions => "users/sessions" }
   

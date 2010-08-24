@@ -8,6 +8,13 @@ class LinksController < ApplicationController
     get_root_links
     @pages = Page.all
   end
+  
+  def edit
+    @pages = Page.all
+    get_link
+    get_root_links
+    flash[:notice] = "Editing #{@link.title}"
+  end
 
   def create
     @link = Link.new(params[:link])
@@ -18,12 +25,10 @@ class LinksController < ApplicationController
   end
   
   def update
-    @link = Link.find(params[:id])
+    get_link
     if @link.update_attributes(params[:link])
       flash[:notice] = "Link updated successfully."
-      get_root_links
-    else
-      render action: "index" #render will show the error messages 
+      redirect_to action: "index"
     end
   end
 

@@ -9,26 +9,16 @@ $(document).ready(function(){
 function slideMenu(){
 
   $('ul.nav').superfish();
-        
-  var contact = $('#contact');
-  var home = $('#home');
-  var hometext = $('#hometext');
-  var contacttext = $('#contacttext');
   
-  contacttext.hide();
+  //Add the current class to Home
+  $('ul.nav li:first').addClass('current');
   
-  contact.click(function(){
-    home.parent().removeClass('current');
-    contact.parent().addClass('current');
-    hometext.slideUp(300)
-    contacttext.delay(310).slideDown(300)
-  });
-  
-  home.click(function(){
-    contact.parent().removeClass('current');
-    home.parent().addClass('current');
-    contacttext.slideUp(300)
-    hometext.delay(310).slideDown(300)
+  //The current class
+  $('ul.nav li').live('click', function(){
+    $('ul.nav li').each(function(){
+      $(this).removeClass('current');
+    });
+    $(this).addClass('current');
   });
 };
 

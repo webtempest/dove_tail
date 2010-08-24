@@ -14,7 +14,7 @@ class PagesController < ApplicationController
     if @page.save
       @pages = Page.all
       flash[:notice] = "Page created successfully"
-      redirect_to "index"
+      redirect_to action: "index"
     else
       render action: "index"
     end
@@ -25,7 +25,7 @@ class PagesController < ApplicationController
     if @page.update_attributes(params[:page])
       flash[:notice] = "Page updated successfully."
       @pages = Page.all
-      redirect_to action: pages_root
+      redirect_to action: "index"
     else
       render action: "index" #render will show the error messages 
     end

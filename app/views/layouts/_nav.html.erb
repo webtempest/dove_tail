@@ -1,0 +1,13 @@
+<ul class="nav">
+  <% @links.each do |link| %>
+    <li id="link_<%= link.id %>"><%= link_to link.title, {controller: "home", action: "switch", id: link.page_id}, remote: true %>
+      <% unless link.children.empty? %>
+        <ul>
+          <% link.children.each do |sub| %>
+            <li id="link_<%= sub.id %>"><%= link_to sub.title, {controller: "home", action: "switch", id: sub.page_id}, remote: true %></li>
+          <% end -%>  
+        </ul>
+      <% end -%>
+    </li>
+  <% end -%>
+</ul>

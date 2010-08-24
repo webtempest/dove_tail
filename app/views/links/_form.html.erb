@@ -1,0 +1,17 @@
+<% form_for(@link, remote: true) do |f| -%>
+  <%= render "shared/error_messages", :target => @link %> 
+  <p><%= f.label :title %></p>
+    
+  <p><%= f.text_field :title %></p>
+  
+  <p><%= f.label :goes_to_page %></p>
+  <p><%= f.collection_select(:page_id, @pages, :id, :title)  %></p>
+  
+  <p><%= f.label "If it's a submenu link it will sit under" %></p>
+  <% if params[:id].blank? %>
+    <p><%= f.collection_select(:parent_id, @root_links_with_root, :id, :title, {selected: @root.id} )  %></p>
+  <% else %>
+    <p><%= f.collection_select(:parent_id, @root_links_with_root, :id, :title )  %></p>
+  <% end -%>
+    <%= f.submit(params[:id].blank? ? 'Create' : 'Edit') %>
+<% end -%>

@@ -1332,17 +1332,22 @@ body .append-bottom {
 }
 
 /* line 52, ../../app/stylesheets/partials/_public.scss */
+#body {
+  margin-left: 30px;
+}
+
+/* line 56, ../../app/stylesheets/partials/_public.scss */
 h1 {
   font-size: 2em;
 }
 
-/* line 55, ../../app/stylesheets/partials/_public.scss */
+/* line 59, ../../app/stylesheets/partials/_public.scss */
 hr {
   background-color: #c5b37a;
 }
 
 /* footer */
-/* line 60, ../../app/stylesheets/partials/_public.scss */
+/* line 64, ../../app/stylesheets/partials/_public.scss */
 #footer, #header, #nav, #feature {
   float: left;
   margin-right: 10px;
@@ -1350,18 +1355,18 @@ hr {
   margin-right: 0;
 }
 
-/* line 66, ../../app/stylesheets/partials/_public.scss */
+/* line 70, ../../app/stylesheets/partials/_public.scss */
 #footer {
   background: #d9cb9e url("images/maintop.jpg") repeat-x;
   height: 76px;
 }
-/* line 69, ../../app/stylesheets/partials/_public.scss */
+/* line 73, ../../app/stylesheets/partials/_public.scss */
 #footer p {
   padding: 40px 0 0 40px;
 }
 
 /* feature items */
-/* line 74, ../../app/stylesheets/partials/_public.scss */
+/* line 78, ../../app/stylesheets/partials/_public.scss */
 .featureitem {
   width: 240px;
   background: url("images/featureitem.jpg") no-repeat right top;
@@ -1369,19 +1374,19 @@ hr {
   float: left;
   padding-left: 40px;
 }
-/* line 80, ../../app/stylesheets/partials/_public.scss */
+/* line 84, ../../app/stylesheets/partials/_public.scss */
 .featureitem img {
   position: relative;
   top: 8px;
   left: -7px;
 }
-/* line 84, ../../app/stylesheets/partials/_public.scss */
+/* line 88, ../../app/stylesheets/partials/_public.scss */
 .featureitem .caption {
   position: relative;
   top: -15px;
   left: -2px;
 }
-/* line 88, ../../app/stylesheets/partials/_public.scss */
+/* line 92, ../../app/stylesheets/partials/_public.scss */
 .featureitem .caption h3 {
   background: none repeat scroll 0 0 black;
   color: white;
@@ -1391,42 +1396,42 @@ hr {
   padding-left: 7px;
   position: relative;
 }
-/* line 96, ../../app/stylesheets/partials/_public.scss */
+/* line 100, ../../app/stylesheets/partials/_public.scss */
 .featureitem .caption p {
   padding-right: 0.8em;
 }
 
 /* CLASSES */
-/* line 101, ../../app/stylesheets/partials/_public.scss */
+/* line 105, ../../app/stylesheets/partials/_public.scss */
 body {
   background-color: #374140;
 }
 
-/* line 105, ../../app/stylesheets/partials/_public.scss */
+/* line 109, ../../app/stylesheets/partials/_public.scss */
 div.section, div.entry {
   float: left;
   margin-right: 10px;
   width: 230px;
 }
 
-/* line 110, ../../app/stylesheets/partials/_public.scss */
+/* line 114, ../../app/stylesheets/partials/_public.scss */
 .feeds {
   float: left;
   margin-right: 10px;
   width: 230px;
 }
 
-/* line 115, ../../app/stylesheets/partials/_public.scss */
+/* line 119, ../../app/stylesheets/partials/_public.scss */
 #content.padding {
   padding: 2em 15px 0px 40px;
 }
 
-/* line 118, ../../app/stylesheets/partials/_public.scss */
+/* line 122, ../../app/stylesheets/partials/_public.scss */
 .padding-top {
   padding-top: 20px;
 }
 
-/* line 121, ../../app/stylesheets/partials/_public.scss */
+/* line 125, ../../app/stylesheets/partials/_public.scss */
 .v40 {
   height: 40px;
   float: left;
@@ -1436,27 +1441,27 @@ div.section, div.entry {
 }
 
 /*SLIDER */
-/* line 130, ../../app/stylesheets/partials/_public.scss */
+/* line 134, ../../app/stylesheets/partials/_public.scss */
 .slide {
   float: left;
   position: relative;
 }
 
-/* line 134, ../../app/stylesheets/partials/_public.scss */
+/* line 138, ../../app/stylesheets/partials/_public.scss */
 .stop {
   position: absolute;
   left: 1px;
 }
 
 /* title */
-/* line 140, ../../app/stylesheets/partials/_public.scss */
+/* line 144, ../../app/stylesheets/partials/_public.scss */
 .ft-title {
   padding: 0 10px 0 10px;
   color: #d9cb9e;
 }
 
 /* next and prev */
-/* line 146, ../../app/stylesheets/partials/_public.scss */
+/* line 150, ../../app/stylesheets/partials/_public.scss */
 .ft-next {
   text-decoration: none;
   background-color: black;
@@ -1465,22 +1470,22 @@ div.section, div.entry {
   padding: 0 10px 0 10px;
 }
 
-/* line 153, ../../app/stylesheets/partials/_public.scss */
+/* line 157, ../../app/stylesheets/partials/_public.scss */
 a:visited.ft-next, a:visited.ft-prev {
   color: #d9cb9e;
 }
 
-/* line 157, ../../app/stylesheets/partials/_public.scss */
+/* line 161, ../../app/stylesheets/partials/_public.scss */
 a {
   outline: none;
 }
 
-/* line 158, ../../app/stylesheets/partials/_public.scss */
+/* line 162, ../../app/stylesheets/partials/_public.scss */
 a img {
   outline: none;
 }
 
-/* line 160, ../../app/stylesheets/partials/_public.scss */
+/* line 164, ../../app/stylesheets/partials/_public.scss */
 .ft-prev {
   text-decoration: none;
   background-color: black;
@@ -1493,19 +1498,19 @@ a img {
   -webkit-border-bottom-right-radius: 2ex;
 }
 
-/* line 171, ../../app/stylesheets/partials/_public.scss */
+/* line 175, ../../app/stylesheets/partials/_public.scss */
 .ft-next {
   -moz-border-radius-topleft: 2ex;
   -webkit-border-top-left-radius: 2ex;
   -moz-border-radius-bottomleft: 2ex;
   -webkit-border-bottom-left-radius: 2ex;
 }
-/* line 176, ../../app/stylesheets/partials/_public.scss */
+/* line 180, ../../app/stylesheets/partials/_public.scss */
 .ft-next:hover {
   color: #333333;
 }
 
-/* line 179, ../../app/stylesheets/partials/_public.scss */
+/* line 183, ../../app/stylesheets/partials/_public.scss */
 a:hover.ft-prev, a:hover.ft-next {
   color: #333333;
 }

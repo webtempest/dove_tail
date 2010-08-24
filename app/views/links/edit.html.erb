@@ -15,7 +15,7 @@
   <div id="notice" style="display: none;"><%= flash[:notice] %></div>
   <div id="alert" style="display: none;"><%= flash[:alert] %></div>
 
-  <% form_for(@link, remote: true) do |f| -%>
+  <% form_for(@link) do |f| -%>
     <%= render "shared/error_messages", :target => @link %> 
     <p><%= f.label :title %></p>
       

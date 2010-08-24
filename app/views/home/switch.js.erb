@@ -1,0 +1,5 @@
+$("#body").slideUp('slow', function(){
+  $("#body").html("<%= escape_javascript( @page.body.html_safe)%>");
+  $("#body").slideDown();
+});
+

@@ -1,3 +1,9 @@
+<%- content_for :nav do %>
+  <li><%= link_to "Website", root_url %></li>
+  <li class="current"><%= link_to "Pages", controller: "pages" %></li>
+  <li><%= link_to "Menus", controller: "links" %></li>
+<% end -%>
+
 <div class="span-24">
   <h3>Your Pages:</h3>
   <ul id="pages"> 
@@ -26,7 +32,6 @@
       
   <% end -%>
 </div>
-
 
 <script type='text/javascript' charset='UTF-8'>
   $(document).ready(function(){
