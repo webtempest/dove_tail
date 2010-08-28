@@ -8,3 +8,5 @@
 
 bodie = User.create(email: "bodie@dovetailtimbers.com", password: "frisbee")
 root_link = Link.create(title: "root", parent_id: 0, page_id: 1)
+home_link = Link.create(title: "Home", parent_id: 1, page_id: 1)
+home = Page.create(title: "home", body: "<p>Site currently under construction...check back soon!</p>")
