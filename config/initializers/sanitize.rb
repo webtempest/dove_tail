@@ -1,1 +1,2 @@
-include HTML::Sanitizer
+include ActionView::Helpers
+
