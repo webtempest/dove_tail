@@ -1,7 +1,7 @@
 <%= content_for(:feature){render :partial => "feature"} %>
 
 <div id="body">
-  <%= @page.body.html_safe %>
+  <%= raw @page.body %>
 </div>
 
 <div class="featureitem">
