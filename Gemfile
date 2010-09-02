@@ -2,7 +2,7 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.0.0' 
 gem 'pg'
-gem 'haml'
+gem 'haml', '>= 3.0.18'
 gem 'compass'
 gem 'devise'
 gem 'hassle', :git => 'http://github.com/Papipo/hassle.git'
@@ -10,7 +10,6 @@ gem 'hassle', :git => 'http://github.com/Papipo/hassle.git'
 gem 'aws-s3'
 gem 'paperclip'
 gem 'ckeditor', :git => 'git://github.com/galetahub/rails-ckeditor.git', :branch => 'rails3'
-gem 'sanitize'
 
 # for menu system
 gem 'acts_as_tree'
