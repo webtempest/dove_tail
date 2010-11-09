@@ -287,7 +287,7 @@
 		width: 500, // width of panel
 		height: 332, // height of panel
 		strips: 1, // number of strips
-		delay: 5000, // delay between images in ms
+		delay: 10000, // delay between images in ms
 		stripDelay: 50, // delay beetwen strips in ms
 		titleOpacity: 0.7, // opacity of title
 		titleSpeed: 1000, // speed of title appereance in ms

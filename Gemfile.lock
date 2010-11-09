@@ -181,7 +181,7 @@ DEPENDENCIES
   launchy
   paperclip
   pg
-  rails (= 3.0.0)
+  rails
   rspec-rails (>= 2.0.0.beta.1)
   ruby_parser
   spork
