@@ -29,6 +29,7 @@
   a {
     &:focus, &:hover, &:active {
       background: #3e4544;
+      color: #ab995e;
       outline: 0; } }
   li.current {
     background-color: #d9cb9e;
@@ -38,6 +39,7 @@
       border-top: 1px solid #d0c296; }
     &:hover, &.sfHover {
       background-color: #ccbd8e;
+      color: #ab995e;
       outline: 0; }
     > a {
       &:focus, &:hover, &:active {

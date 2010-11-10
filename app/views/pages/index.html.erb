@@ -20,7 +20,7 @@
   <div id="notice" style="display: none;"><%= flash[:notice] %></div>
   <div id="alert" style="display: none;"><%= flash[:alert] %></div>
   
-  <% form_for(@page) do |f| -%>
+  <% form_for(@page, :html => {:multipart => true}) do |f| -%>
     <%= render "shared/error_messages", :target => @page %> 
     <p><%= f.label :title %></p>
       
@@ -28,6 +28,32 @@
     
     <p><%= f.label :body %></p>
     <p><%= f.cktext_area :body, :toolbar=>'Full', :width=>'850px', :height=>'400px' %></p>
+    
+    <p><%= link_to "Add/edit Feature Items", "#", :id => "edit_feature" %></p> 
+    
+    <div id="toggle_dropdown" style="display: none;">
+      <table>
+       
+          <td></td>
+          <td></td>
+        <% f.fields_for :featureitems do |builder| %>
+        <tr>
+          <td>
+            <p><%= f.label :title %></p>
+            <p><%= builder.text_field :title %></p>
+            <%= builder.fields_for :image do |i| %>
+              <p><%= i.label :new_image %></p>
+              <p><%= i.file_field :image %></p>
+            <% end -%>
+            <p><%= f.label :body %></p>
+            <%= builder.text_area :body %>
+          </td>
+          <td><%= image_tag  %></td>
+        </tr>
+        <% end -%>
+      </table>
+    </div>
+  
     <%= f.submit(params[:id].blank? ? 'Create' : 'Edit') %>
       
   <% end -%>
@@ -40,5 +66,10 @@
         CKEDITOR.instances[instance].updateElement();
       }
     });
+    
+    $("#edit_feature").click(function(){
+      $("#toggle_dropdown").toggle();
+      return false;
+    })
   });
 </script>

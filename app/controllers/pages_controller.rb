@@ -5,8 +5,19 @@ class PagesController < ApplicationController
 
   def index
     @pages = Page.all
-    @page = Page.find(params[:id]) if params[:id]
-    @page = Page.new if @page.nil?
+    
+    if params[:id]
+      @page = Page.find(params[:id]) if params[:id]
+      @page.featureitems.each do |fi|
+        fi.build_image 
+      end
+    elsif @page.nil?
+      @page = Page.new
+      3.times do
+        fi = @page.featureitems.build
+        fi.build_image
+      end
+    end
   end
 
   def create
